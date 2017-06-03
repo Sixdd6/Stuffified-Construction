@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--  Building Components  -->
+
+  <ThingDef ParentName="ResourceBase" Name="CarpetMaterial">
+    <defName>CarpetMaterial</defName>
+    <label>Carpeting Fabric</label>
+    <description>A piled textile product intended for use as soft and decorative flooring.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Flooring</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(200,200,200)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+  <!--  Resources  -->
+  
+  <ThingDef ParentName="OrganicProductBase" Name="Charcoal">
+    <defName>Charcoal</defName>
+    <label>Charcoal</label>
+    <description>Produced by burning wood, charcoal has long been used by humanity as a fuel due to its slow-burning, high energy properties.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Charcoal</texPath>
+    </graphicData>
+    <stackLimit>250</stackLimit>
+    <statBases>
+      <MarketValue>0</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase" Name="Wire">
+    <defName>Wire</defName>
+    <label>Wire</label>
+    <description>A spool of metal wire.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Wire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MarketValue>0</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+  <!--  Items  -->
+
+  <ThingDef ParentName="ResourceBase" Name="IndustrialPDA">
+    <defName>IndustrialPDA</defName>
+    <label>Industrial PDA</label>
+    <description>A device intended for use with heavy industrial devices. It enables the user to control the machinery with great precision.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/IndustrialPDA</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>1</stackLimit>
+    <tradeNeverStack>true</tradeNeverStack>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>250</MarketValue>
+      <MaxHitPoints>80</MaxHitPoints>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+  </ThingDef>
+
+</Defs>

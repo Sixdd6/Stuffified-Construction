@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+
+  <WorkGiverDef Name="DoBillsMakeWeapons">
+    <defName>DoBillsMakeWeapons</defName>
+    <label>make weapons</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Smithing</workType>
+    <priorityInType>115</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ElectricSmithy</li>
+      <li>FueledSmithy</li>
+      <li>Anvil</li>
+    </fixedBillGiverDefs>
+    <verb>smith</verb>
+    <gerund>smithing at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <WorkGiverDef Name="DoBillsSmelter">
+    <defName>DoBillsSmelter</defName>
+    <label>smelt items</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>80</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ElectricSmelter</li>
+      <li>Forge</li>
+    </fixedBillGiverDefs>
+    <verb>refine</verb>
+    <gerund>refining at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <WorkGiverDef Name="DoBillsDrill">
+    <defName>DoBillsDrill</defName>
+    <label>use drilling rig</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Mining</workType>
+    <priorityInType>115</priorityInType>
+    <fixedBillGiverDefs>
+      <li>DrillRigIndustrial</li>
+    </fixedBillGiverDefs>
+    <verb>drill</verb>
+    <gerund>drilling at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+</WorkGivers>

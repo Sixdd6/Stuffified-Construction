@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- =========== Wood =========== -->
+  
+  <ThingDef ParentName="ResourceVerbBase" Name="WoodLog">
+    <defName>WoodLog</defName>
+    <label>Synthwood Logs</label>
+    <description>A log of synthwood. Synthwood comes from a tree which was genetically designed to produce usable wood quickly at a low cost.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/WoodLogWhite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(133,97,67)</color>
+    </graphicData>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <soundInteract>Wood_Drop</soundInteract>
+    <soundDrop>Wood_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.4</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+      <MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
+      <MeleeWeapon_Cooldown>2.2</MeleeWeapon_Cooldown>
+      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <stuffAdjective>synthwood</stuffAdjective>
+      <categories>
+        <li>Woody</li>
+      </categories>
+      <color>(133,97,67)</color>
+      <constructEffect>ConstructWood</constructEffect>
+      <appearance>Planks</appearance>
+      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.5</MaxHitPoints>
+        <Beauty>1.25</Beauty>
+        <Flammability>1</Flammability>
+        <WorkToMake>0.7</WorkToMake>
+        <DoorOpenSpeed>1.2</DoorOpenSpeed>
+        <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
+      </statFactors>
+    </stuffProps>
+    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <thingCategories>
+      <li>WoodLogs</li>
+    </thingCategories>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <ThingDef ParentName="WoodLog" Name="WoodBirch">
+    <defName>WoodBirch</defName>
+    <label>Birch Logs</label>
+    <description>Cut logs of birch wood, a temperate hardwood with white bark.</description>
+    <graphicData>
+      <color>(205,200,180)</color>
+    </graphicData>
+    <stuffProps>
+      <color>(205,200,180)</color>
+      <stuffAdjective>birchwood</stuffAdjective>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.6</MaxHitPoints>
+        <Beauty>1.28</Beauty>
+        <WorkToMake>0.85</WorkToMake>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="WoodLog" Name="WoodCecropia">
+    <defName>WoodCecropia</defName>
+    <label>Cecropia Logs</label>
+    <description>Cut logs of cecropia, an easily-produced tropical wood. It is not particularly sturdy.</description>
+    <graphicData>
+      <color>(235,205,155)</color>
+    </graphicData>
+    <stuffProps>
+      <color>(235,205,155)</color>
+      <stuffAdjective>cecropiawood</stuffAdjective>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.25</MaxHitPoints>
+        <Beauty>1.1</Beauty>
+        <WorkToMake>0.5</WorkToMake>
+        <DoorOpenSpeed>1.5</DoorOpenSpeed>
+        <MarketValue>0.8</MarketValue>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="WoodLog" Name="WoodOak">
+    <defName>WoodOak</defName>
+    <label>Oak Logs</label>
+    <description>Cut logs of oak, a common and highly durable wood known for its resilience to decay.</description>
+    <graphicData>
+      <color>(100,75,55)</color>
+    </graphicData>
+    <stuffProps>
+      <color>(100,75,55)</color>
+      <stuffAdjective>oaken</stuffAdjective>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.75</MaxHitPoints>
+        <Beauty>1.15</Beauty>
+        <WorkToMake>0.75</WorkToMake>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="WoodLog" Name="WoodPine">
+    <defName>WoodPine</defName>
+    <label>Pine Logs</label>
+    <description>Cut logs of pine, a boreal wood of mild durability and widespread use.</description>
+    <graphicData>
+      <color>(100,75,55)</color>
+    </graphicData>
+    <stuffProps>
+      <color>(100,75,55)</color>
+      <stuffAdjective>pinewood</stuffAdjective>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="WoodLog" Name="WoodPoplar">
+    <defName>WoodPoplar</defName>
+    <label>Poplar Logs</label>
+    <description>Cut logs of poplar, a tree known for its rapid growth and light yet durable wood.</description>
+    <graphicData>
+      <color>(100,75,55)</color>
+    </graphicData>
+    <stuffProps>
+      <color>(100,75,55)</color>
+      <stuffAdjective>poplarwood</stuffAdjective>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.65</MaxHitPoints>
+        <Beauty>1.1</Beauty>
+        <DoorOpenSpeed>1.75</DoorOpenSpeed>
+        <MeleeWeapon_Cooldown>0.8</MeleeWeapon_Cooldown>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="WoodLog" Name="WoodSaguaro">
+    <defName>WoodSaguaro</defName>
+    <label>Saguaro Ribs</label>
+    <description>Cut material from a Saguaro cactus. Very poor quality, but usable in a pinch.</description>
+    <graphicData>
+      <color>(250,250,195)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.1</MarketValue>
+    </statBases>
+    <stuffProps>
+      <color>(250,250,195)</color>
+      <stuffAdjective>saguarowood</stuffAdjective>
+      <statOffsets>
+        <Beauty>-2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.075</MaxHitPoints>
+        <Beauty>0.3</Beauty>
+        <DoorOpenSpeed>2.0</DoorOpenSpeed>
+        <BedRestEffectiveness>0.9</BedRestEffectiveness>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="WoodLog" Name="WoodTeak">
+    <defName>WoodTeak</defName>
+    <label>Teak Logs</label>
+    <description>Cut logs of Teak, an Asian hardwood prized for its tremendous resistance to decay and weathering.</description>
+    <graphicData>
+      <color>(150,70,30)</color>
+    </graphicData>
+    <stuffProps>
+      <color>(150,70,30)</color>
+      <stuffAdjective>teakwood</stuffAdjective>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0.3</Flammability>
+        <WorkToMake>0.6</WorkToMake>
+        <Beauty>1.1</Beauty>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="WoodLog" Name="WoodEbony">
+    <defName>WoodEbony</defName>
+    <label>Ebony Logs</label>
+    <description>Cut logs of ebony, a very luxurious and sturdy wood known for its dark coloration.</description>
+    <graphicData>
+      <color>(85,85,85)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>15</MarketValue>
+      <SharpDamageMultiplier>0.8</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.15</BluntDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <stuffAdjective>ebon</stuffAdjective>
+      <color>(85,85,85)</color>
+      <statOffsets>
+        <Beauty>10</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MarketValue>1.1</MarketValue>
+        <MaxHitPoints>1.1</MaxHitPoints>
+        <Beauty>4</Beauty>
+        <WorkToMake>1.5</WorkToMake>
+        <Flammability>0.5</Flammability>
+        <DoorOpenSpeed>0.8</DoorOpenSpeed>
+      </statFactors>
+    </stuffProps>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="WoodLog" Name="WoodAmaranth">
+    <defName>WoodAmaranth</defName>
+    <label>Amaranth Logs</label>
+    <description>Cut logs of amaranth, also known as purple heart. It possesses a striking violet color as well as almost legendary durability.</description>
+    <graphicData>
+      <color>(190,105,130)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>15</MarketValue>
+      <SharpDamageMultiplier>1.1</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <stuffAdjective>amaranthine</stuffAdjective>
+      <color>(190,105,130)</color>
+      <statOffsets>
+        <Beauty>12</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MarketValue>1.1</MarketValue>
+        <MaxHitPoints>1.35</MaxHitPoints>
+        <Beauty>5</Beauty>
+        <WorkToMake>1.5</WorkToMake>
+        <Flammability>0.5</Flammability>
+        <DoorOpenSpeed>0.8</DoorOpenSpeed>
+      </statFactors>
+    </stuffProps>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="WoodLog" Name="WoodWillow">
+    <defName>WoodWillow</defName>
+    <label>Willow Logs</label>
+    <description>Cut logs of a willow. It possesses a fertile green color as well as very low flammability.</description>
+    <graphicData>
+      <color>(71,75,36)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>15</MarketValue>
+      <SharpDamageMultiplier>1.1</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <stuffAdjective>willow</stuffAdjective>
+      <color>(71,75,36)</color>
+      <statOffsets>
+        <Beauty>12</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MarketValue>1.1</MarketValue>
+        <MaxHitPoints>1.35</MaxHitPoints>
+        <Beauty>5</Beauty>
+        <WorkToMake>1.5</WorkToMake>
+        <Flammability>0.15</Flammability>
+        <DoorOpenSpeed>0.8</DoorOpenSpeed>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="WoodLog" Name="WoodMaple">
+    <defName>WoodMaple</defName>
+    <label>Maple Logs</label>
+    <description>Cut logs of Maple.</description>
+    <graphicData>
+      <color>(93,58,45)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>15</MarketValue>
+      <SharpDamageMultiplier>1.1</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <stuffAdjective>maple</stuffAdjective>
+      <color>(93,58,45)</color>
+      <statOffsets>
+        <Beauty>12</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MarketValue>1.1</MarketValue>
+        <MaxHitPoints>1.35</MaxHitPoints>
+        <Beauty>5</Beauty>
+        <WorkToMake>1.5</WorkToMake>
+        <Flammability>0.8</Flammability>
+        <DoorOpenSpeed>0.8</DoorOpenSpeed>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="WoodLog" Name="VG_IronwoodLog">
+    <defName>VG_IronwoodLog</defName>
+    <label>Ironwood Logs</label>
+    <description>Cut logs of Ironwood.</description>
+    <graphicData>
+      <color>(100,100,100)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.7</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>0.4</Mass>
+      <Flammability>1.0</Flammability>
+      <MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
+      <MeleeWeapon_Cooldown>1.75</MeleeWeapon_Cooldown>
+      <SharpDamageMultiplier>0.8</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <commonality>0.75</commonality>
+      <stuffAdjective>ironwood</stuffAdjective>
+      <color>(100,100,100)</color>
+      <statFactors>
+        <MaxHitPoints>0.75</MaxHitPoints>
+        <Beauty>4</Beauty>
+        <Flammability>0.75</Flammability>
+        <WorkToMake>1.25</WorkToMake>
+        <WorkToBuild>1.25</WorkToBuild>
+        <DoorOpenSpeed>1.2</DoorOpenSpeed>
+        <MeleeWeapon_Cooldown>0.8</MeleeWeapon_Cooldown>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="WoodLog" Name="WoodCherry">
+    <defName>WoodCherry</defName>
+    <label>Cherry Logs</label>
+    <description>Cut logs of Cherry wood.</description>
+    <graphicData>
+      <color>(147,45,34)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.7</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>0.4</Mass>
+      <Flammability>1.0</Flammability>
+      <MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
+      <MeleeWeapon_Cooldown>1.75</MeleeWeapon_Cooldown>
+      <SharpDamageMultiplier>0.8</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <commonality>0.75</commonality>
+      <stuffAdjective>cherry</stuffAdjective>
+      <color>(147,45,34)</color>
+      <statFactors>
+        <MaxHitPoints>0.75</MaxHitPoints>
+        <Beauty>4</Beauty>
+        <Flammability>0.75</Flammability>
+        <WorkToMake>1.25</WorkToMake>
+        <WorkToBuild>1.25</WorkToBuild>
+        <DoorOpenSpeed>1.2</DoorOpenSpeed>
+        <MeleeWeapon_Cooldown>0.8</MeleeWeapon_Cooldown>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="WoodLog" Name="WoodCamellia">
+    <defName>WoodCamellia</defName>
+    <label>Camellia Logs</label>
+    <description>Cut logs of Camellia wood.</description>
+    <graphicData>
+      <color>(249,244,249)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.7</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>0.4</Mass>
+      <Flammability>1.0</Flammability>
+      <MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
+      <MeleeWeapon_Cooldown>1.75</MeleeWeapon_Cooldown>
+      <SharpDamageMultiplier>0.8</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <commonality>0.75</commonality>
+      <stuffAdjective>camellia</stuffAdjective>
+      <color>(249,244,249)</color>
+      <statFactors>
+        <MaxHitPoints>1.0</MaxHitPoints>
+        <Beauty>4</Beauty>
+        <Flammability>0.75</Flammability>
+        <WorkToMake>1.25</WorkToMake>
+        <WorkToBuild>1.25</WorkToBuild>
+        <DoorOpenSpeed>1.2</DoorOpenSpeed>
+        <MeleeWeapon_Cooldown>0.8</MeleeWeapon_Cooldown>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="WoodLog" Name="WoodAcacia">
+    <defName>WoodAcacia</defName>
+    <label>Acacia Logs</label>
+    <description>Cut logs of Acacia wood.</description>
+    <graphicData>
+      <color>(196,83,39)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.7</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>0.4</Mass>
+      <Flammability>1.0</Flammability>
+      <MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
+      <MeleeWeapon_Cooldown>1.75</MeleeWeapon_Cooldown>
+      <SharpDamageMultiplier>0.8</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <commonality>0.75</commonality>
+      <stuffAdjective>acacia</stuffAdjective>
+      <color>(196,83,39)</color>
+      <statFactors>
+        <MaxHitPoints>1.0</MaxHitPoints>
+        <Beauty>4</Beauty>
+        <Flammability>0.75</Flammability>
+        <WorkToMake>1.25</WorkToMake>
+        <WorkToBuild>1.25</WorkToBuild>
+        <DoorOpenSpeed>1.2</DoorOpenSpeed>
+        <MeleeWeapon_Cooldown>0.8</MeleeWeapon_Cooldown>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="WoodLog" Name="WoodPalm">
+    <defName>WoodPalm</defName>
+    <label>Palm Logs</label>
+    <description>Cut logs of Palm wood.</description>
+    <graphicData>
+      <color>(176,147,87)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.7</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>0.4</Mass>
+      <Flammability>1.0</Flammability>
+      <MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
+      <MeleeWeapon_Cooldown>1.75</MeleeWeapon_Cooldown>
+      <SharpDamageMultiplier>0.8</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <commonality>0.75</commonality>
+      <stuffAdjective>palm</stuffAdjective>
+      <color>(176,147,87)</color>
+      <statFactors>
+        <MaxHitPoints>1.0</MaxHitPoints>
+        <Beauty>4</Beauty>
+        <Flammability>0.75</Flammability>
+        <WorkToMake>1.25</WorkToMake>
+        <WorkToBuild>1.25</WorkToBuild>
+        <DoorOpenSpeed>1.2</DoorOpenSpeed>
+        <MeleeWeapon_Cooldown>0.8</MeleeWeapon_Cooldown>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+</Defs>

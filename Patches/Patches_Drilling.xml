@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>/Resources/ThingDef[defName="EXP_Copper"]</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="DrillRigIndustrial"]/recipes</xpath>
+			<value>
+				<li>DrillCopper</li>
+				<li>DrillTin</li>
+				<li>DrillLead</li>
+				<li>DrillAluminum</li>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+</Patch>

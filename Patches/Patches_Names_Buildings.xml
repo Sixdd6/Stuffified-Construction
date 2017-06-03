@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="CraftingSpot"]/label</xpath>
+		<value>
+			<label>Crafting Spot</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="TableSculpting"]/label</xpath>
+		<value>
+			<label>Sculptor's Table</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="TableButcher"]/label</xpath>
+		<value>
+			<label>Butcher Table</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="HandTailoringBench"]/label</xpath>
+		<value>
+			<label>Hand Tailoring Bench</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="ElectricTailoringBench"]/label</xpath>
+		<value>
+			<label>Electric Tailoring Bench</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="FueledSmithy"]/label</xpath>
+		<value>
+			<label>Fueled Smithy</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="ElectricSmithy"]/label</xpath>
+		<value>
+			<label>Electric Smithy</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="TableMachining"]/label</xpath>
+		<value>
+			<label>Machining Table</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="ElectricStove"]/label</xpath>
+		<value>
+			<label>Electric Stove</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="FueledStove"]/label</xpath>
+		<value>
+			<label>Fueled Stove</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="TableStonecutter"]/label</xpath>
+		<value>
+			<label>Stonecutter's Table</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Brewery"]/label</xpath>
+		<value>
+			<label>Brewery</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="DrugLab"]/label</xpath>
+		<value>
+			<label>Drug Lab</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="ElectricSmelter"]/label</xpath>
+		<value>
+			<label>Electric Smelter</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Refinery"]/label</xpath>
+		<value>
+			<label>Refinery</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="ComponentAssemblyBench"]/label</xpath>
+		<value>
+			<label>Component Assembly Bench</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="SimpleResearchBench"]/label</xpath>
+		<value>
+			<label>Simple Research Bench</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="HiTechResearchBench"]/label</xpath>
+		<value>
+			<label>Hi-Tech Research Bench</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="ElectricCrematorium"]/label</xpath>
+		<value>
+			<label>Electric Crematorium</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="HydroponicsBasin"]/label</xpath>
+		<value>
+			<label>Hydroponics Basin</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>/DesignationCategoryDef[defName="GardenTools"]</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="HydroponicsBasin"]/designationCategory</xpath>
+				<value>
+					<designationCategory>GardenTools</designationCategory>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="FermentingBarrel"]/label</xpath>
+		<value>
+			<label>Fermenting Barrel</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>/DesignationCategoryDef[defName="VG_Brewing"]</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="FermentingBarrel"]/designationCategory</xpath>
+				<value>
+					<designationCategory>VG_Brewing</designationCategory>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="DeepDrill"]/label</xpath>
+		<value>
+			<label>Deep Drill</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="NutrientPasteDispenser"]/label</xpath>
+		<value>
+			<label>Nutrient Paste Dispenser</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Hopper"]/label</xpath>
+		<value>
+			<label>Hopper</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="DeepDrill"]/label</xpath>
+		<value>
+			<label>Deep Drill</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="GroundPenetratingScanner"]/label</xpath>
+		<value>
+			<label>Ground-Penetrating Scanner</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="OrbitalTradeBeacon"]/label</xpath>
+		<value>
+			<label>Orbital Trade Beacon</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="CommsConsole"]/label</xpath>
+		<value>
+			<label>Comms Console</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="FirefoamPopper"]/label</xpath>
+		<value>
+			<label>Firefoam Popper</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="MoisturePump"]/label</xpath>
+		<value>
+			<label>Moisture Pump</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="LongRangeMineralScanner"]/label</xpath>
+		<value>
+			<label>Long Range Mineral Scanner</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PodLauncher"]/label</xpath>
+		<value>
+			<label>Pod Launcher</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="TransportPod"]/label</xpath>
+		<value>
+			<label>Transport Pod</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="MultiAnalyzer"]/label</xpath>
+		<value>
+			<label>Multi-Analyzer</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="VitalsMonitor"]/label</xpath>
+		<value>
+			<label>Vitals Monitor</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="ToolCabinet"]/label</xpath>
+		<value>
+			<label>Tool Cabinet</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Grave"]/label</xpath>
+		<value>
+			<label>Grave</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Sarcophagus"]/label</xpath>
+		<value>
+			<label>Sarcophagus</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="CryptosleepCasket"]/label</xpath>
+		<value>
+			<label>Cryptosleep Casket</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="AncientCryptosleepCasket"]/label</xpath>
+		<value>
+			<label>Ancient Cryptosleep Casket</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="MarriageSpot"]/label</xpath>
+		<value>
+			<label>MarriageSpot</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PartySpot"]/label</xpath>
+		<value>
+			<label>Party Spot</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="CaravanPackingSpot"]/label</xpath>
+		<value>
+			<label>Caravan Packing Spot</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="SleepingSpot"]/label</xpath>
+		<value>
+			<label>Sleeping Spot</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Bed"]/label</xpath>
+		<value>
+			<label>Bed</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="DoubleBed"]/label</xpath>
+		<value>
+			<label>Double Bed</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="RoyalBed"]/label</xpath>
+		<value>
+			<label>Royal Bed</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="HospitalBed"]/label</xpath>
+		<value>
+			<label>Hospital Bed</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="AnimalSleepingSpot"]/label</xpath>
+		<value>
+			<label>Animal Sleeping Spot</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="AnimalSleepingBox"]/label</xpath>
+		<value>
+			<label>Animal Sleeping Box</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="AnimalBed"]/label</xpath>
+		<value>
+			<label>Animal Bed</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Stool"]/label</xpath>
+		<value>
+			<label>Stool</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="DiningChair"]/label</xpath>
+		<value>
+			<label>Dining Chair</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Armchair"]/label</xpath>
+		<value>
+			<label>Armchair</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="TableShort"]/label</xpath>
+		<value>
+			<label>Table (Short)</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="TableLong"]/label</xpath>
+		<value>
+			<label>Table (Long)</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PlantPot"]/label</xpath>
+		<value>
+			<label>Plant Pot</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="TorchLamp"]/label</xpath>
+		<value>
+			<label>Torch Lamp</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="StandingLamp"]/label</xpath>
+		<value>
+			<label>Standing Lamp</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="StandingLamp_Red"]/label</xpath>
+		<value>
+			<label>Standing Lamp (Red)</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="StandingLamp_Green"]/label</xpath>
+		<value>
+			<label>Standing Lamp (Green)</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="StandingLamp_Blue"]/label</xpath>
+		<value>
+			<label>Standing Lamp (Blue)</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="SunLamp"]/label</xpath>
+		<value>
+			<label>Sun Lamp</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Shelf"]/label</xpath>
+		<value>
+			<label>Shelf</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="HorseshoesPin"]/label</xpath>
+		<value>
+			<label>Horseshoes Pin</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="ChessTable"]/label</xpath>
+		<value>
+			<label>Chess Table</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="BilliardsTable"]/label</xpath>
+		<value>
+			<label>Billiards Table</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="TubeTelevision"]/label</xpath>
+		<value>
+			<label>Tube Television</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="FlatscreenTelevision"]/label</xpath>
+		<value>
+			<label>Flatscreen Television</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="MegascreenTelevision"]/label</xpath>
+		<value>
+			<label>Megascreen Television</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Telescope"]/label</xpath>
+		<value>
+			<label>Telescope</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="FueledGenerator"]/label</xpath>
+		<value>
+			<label>Fueled Generator</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Battery"]/label</xpath>
+		<value>
+			<label>Battery</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="SolarGenerator"]/label</xpath>
+		<value>
+			<label>Solar Generator</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="GeothermalGenerator"]/label</xpath>
+		<value>
+			<label>Geothermal Generator</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="WindTurbine"]/label</xpath>
+		<value>
+			<label>Wind Turbine</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PowerConduit"]/label</xpath>
+		<value>
+			<label>Power Conduit</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PowerSwitch"]/label</xpath>
+		<value>
+			<label>Power Switch</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="SunLamp"]/label</xpath>
+		<value>
+			<label>Sun Lamp</label>
+		</value>
+	</Operation>
+
+</Patch>

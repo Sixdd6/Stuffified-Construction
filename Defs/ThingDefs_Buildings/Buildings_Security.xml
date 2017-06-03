@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <!--==================== Traps ======================== -->
+
+  <ThingDef ParentName="BuildingBase" Name="BarbedWire">
+    <defName>BarbedWire</defName>
+    <label>Barbed Wire</label>
+    <description>A mesh of spiked wire, laid on the ground or used as a fence. Discouraging, but not deadly.</description>
+    <thingClass>Building_TrapRearmable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Security/BarbedWire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0,0,1,0.15)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawerType>RealtimeOnly</drawerType>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <stealable>false</stealable>
+    <statBases>
+      <MaxHitPoints>10</MaxHitPoints>
+      <WorkToMake>500</WorkToMake>
+      <Beauty>-4</Beauty>
+      <TrapMeleeDamage>3</TrapMeleeDamage>
+      <TrapSpringChance>0.925</TrapSpringChance>
+    </statBases>
+    <CostList>
+      <Wire>5</Wire>
+    </CostList>
+    <designationCategory>Fences</designationCategory>
+    <building>
+      <isTrap>true</isTrap>
+      <trapDamageCategory>Sharp</trapDamageCategory>
+      <trapUnarmedGraphicData>
+        <texPath>Things/Building/Security/BarbedWireCutup</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>Cutout</shaderType>
+      </trapUnarmedGraphicData>
+    </building>
+    <researchPrerequisites>
+      <li>Smithing</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase" Name="ElectricFence">
+    <defName>ElectricFence</defName>
+    <label>Electric Fence</label>
+    <description>A mesh of wire that has been electrified. The victim will recieve a nasty electric shock.</description>
+    <thingClass>Building_TrapRearmable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Security/ElectricFence</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0,0,1,0.15)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawerType>RealtimeOnly</drawerType>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <stealable>false</stealable>
+    <statBases>
+      <MaxHitPoints>10</MaxHitPoints>
+      <WorkToMake>500</WorkToMake>
+      <Beauty>-4</Beauty>
+      <TrapMeleeDamage>25</TrapMeleeDamage>
+      <TrapSpringChance>0.9</TrapSpringChance>
+    </statBases>
+    <CostList>
+      <Wire>5</Wire>
+      <Component>2</Component>
+    </CostList>
+    <designationCategory>Fences</designationCategory>
+    <building>
+      <isTrap>true</isTrap>
+      <trapDamageCategory>Electric</trapDamageCategory>
+      <trapUnarmedGraphicData>
+        <texPath>Things/Building/Security/BarbedWireCutup</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>Cutout</shaderType>
+      </trapUnarmedGraphicData>
+    </building>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</ThingDefs>

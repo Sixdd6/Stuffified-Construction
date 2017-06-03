@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingCategoryDefs>
+
+  <ThingCategoryDef>
+    <defName>Root</defName>
+    <label>Root</label>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>Resources</defName>
+    <label>Resources</label>
+    <parent>Root</parent>
+  </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>Foods</defName>
+      <label>Foods</label>
+      <parent>Root</parent>
+    </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>FoodMeals</defName>
+        <label>Meals</label>
+        <parent>Foods</parent>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+        <iconPath>Ui/Icons/ThingCategories/FoodMeals</iconPath>
+      </ThingCategoryDef>
+
+        <ThingCategoryDef>
+          <defName>SweetMeals</defName>
+          <label>Sweets</label>
+          <parent>FoodMeals</parent>
+          <iconPath>Ui/Icons/ThingCategories/Sweets</iconPath>
+        </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>FoodRaw</defName>
+        <label>Raw Food</label>
+        <parent>Foods</parent>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+        <iconPath>Ui/Icons/ThingCategories/FoodRaw</iconPath>
+      </ThingCategoryDef>
+
+        <ThingCategoryDef>
+          <defName>AnimalFeed</defName>
+          <label>Animal Feed</label>
+          <parent>FoodRaw</parent>
+          <iconPath>Ui/Icons/ThingCategories/Feed</iconPath>
+        </ThingCategoryDef>
+
+        <ThingCategoryDef>
+          <defName>CookingSupplies</defName>
+          <label>Ingredients</label>
+          <parent>FoodRaw</parent>
+          <iconPath>Ui/Icons/ThingCategories/Cookingstuff</iconPath>
+        </ThingCategoryDef>
+
+        <ThingCategoryDef>
+          <defName>MeatRaw</defName>
+          <label>Meat</label>
+          <parent>FoodRaw</parent>
+          <iconPath>Ui/Icons/ThingCategories/MeatRaw</iconPath>
+        </ThingCategoryDef>
+  
+        <ThingCategoryDef>
+          <defName>PlantFoodRaw</defName>
+          <label>Vegetable</label>
+          <parent>FoodRaw</parent>
+          <iconPath>Ui/Icons/ThingCategories/PlantFoodRaw</iconPath>
+        </ThingCategoryDef>
+
+        <ThingCategoryDef>
+          <defName>FruitFoodRaw</defName>
+          <label>Fruit</label>
+          <parent>FoodRaw</parent>
+          <iconPath>Ui/Icons/ThingCategories/FruitFoodRaw</iconPath>
+        </ThingCategoryDef>
+
+        <ThingCategoryDef>
+          <defName>AnimalProductRaw</defName>
+          <label>Animal Products</label>
+          <parent>FoodRaw</parent>
+          <iconPath>Ui/Icons/ThingCategories/AnimalProductRaw</iconPath>
+        </ThingCategoryDef>
+
+          <ThingCategoryDef>
+            <defName>EggsUnfertilized</defName>
+            <label>Eggs (Unfert.)</label>
+            <parent>AnimalProductRaw</parent>
+            <iconPath>Ui/Icons/ThingCategories/EggsUnfertilized</iconPath>
+          </ThingCategoryDef>
+
+          <ThingCategoryDef>
+            <defName>EggsFertilized</defName>
+            <label>Eggs (Fert.)</label>
+            <parent>AnimalProductRaw</parent>
+            <iconPath>Ui/Icons/ThingCategories/EggsFertilized</iconPath>
+          </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>Manufactured</defName>
+      <label>Manufactured</label>
+      <parent>Resources</parent>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+      <iconPath>Ui/Icons/ThingCategories/Manufactured</iconPath>
+    </ThingCategoryDef>
+  
+      <ThingCategoryDef>
+        <defName>Medicine</defName>
+        <label>Medicine</label>
+        <parent>Manufactured</parent>
+        <iconPath>Ui/Icons/ThingCategories/Medicine</iconPath>
+      </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>Drugs</defName>
+        <label>Drugs</label>
+        <parent>Manufactured</parent>
+        <iconPath>Ui/Icons/ThingCategories/Medicine</iconPath>
+      </ThingCategoryDef>
+
+        <ThingCategoryDef>
+          <defName>Alcohol</defName>
+          <label>Alcohol</label>
+          <parent>Drugs</parent>
+          <iconPath>Ui/Icons/ThingCategories/Medicine</iconPath>
+        </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>Textiles</defName>
+        <label>Textiles</label>
+        <parent>ResourcesRaw</parent>
+        <iconPath>Ui/Icons/ThingCategories/Textiles</iconPath>
+      </ThingCategoryDef>
+
+        <ThingCategoryDef>
+          <defName>PlantFabric</defName>
+          <label>Plant Fiber</label>
+          <parent>Textiles</parent>
+          <iconPath>Ui/Icons/ThingCategories/PlantFabric</iconPath>
+        </ThingCategoryDef>
+
+        <ThingCategoryDef>
+          <defName>AnimalHair</defName>
+          <label>Animal Hair</label>
+          <parent>Textiles</parent>
+          <iconPath>Ui/Icons/ThingCategories/WoolFabric</iconPath>
+        </ThingCategoryDef>
+
+        <ThingCategoryDef>
+          <defName>Leathers</defName>
+          <label>Animal Hide</label>
+          <parent>Textiles</parent>
+          <iconPath>Ui/Icons/ThingCategories/Leathers</iconPath>
+        </ThingCategoryDef>
+
+        <ThingCategoryDef>
+          <defName>SynthFabric</defName>
+          <label>Synthetic Fiber</label>
+          <parent>Textiles</parent>
+          <iconPath>Ui/Icons/ThingCategories/SynthFabric</iconPath>
+        </ThingCategoryDef>
+			
+    <ThingCategoryDef>
+      <defName>ResourcesRaw</defName>
+      <label>Raw Resources</label>
+      <parent>Resources</parent>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+      <iconPath>Ui/Icons/ThingCategories/ResourcesRaw</iconPath>
+    </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>WoodLogs</defName>
+        <label>Wood Logs</label>
+        <parent>ResourcesRaw</parent>
+        <iconPath>Ui/Icons/ThingCategories/WoodLogs</iconPath>
+      </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>StoneBlocks</defName>
+        <label>Common Stone Blocks</label>
+        <parent>ResourcesRaw</parent>
+        <iconPath>Ui/Icons/ThingCategories/StoneBlocks</iconPath>
+      </ThingCategoryDef>
+	  
+      <ThingCategoryDef>
+        <defName>RareStoneBlocks</defName>
+        <label>Exotic Stone Blocks</label>
+        <parent>ResourcesRaw</parent>
+        <iconPath>Ui/Icons/ThingCategories/RareStoneBlocks</iconPath>
+      </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>BaseMetals</defName>
+        <label>Base Metals</label>
+        <parent>ResourcesRaw</parent>
+        <iconPath>Ui/Icons/ThingCategories/MetalIngots</iconPath>
+      </ThingCategoryDef>
+      
+      <ThingCategoryDef>
+        <defName>MetalAlloys</defName>
+        <label>Metal Alloys</label>
+        <parent>ResourcesRaw</parent>
+        <iconPath>Ui/Icons/ThingCategories/RareMetalIngots</iconPath>
+      </ThingCategoryDef>
+
+</ThingCategoryDefs>

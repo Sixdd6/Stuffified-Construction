@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- =========== Fabric =========== -->
+
+  <ThingDef ParentName="ResourceBase" Name="FabricBase" Abstract="True">
+    <description>Soft, fibrous material ready to be used for various applications.</description>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+    </stuffProps>
+  </ThingDef>
+
+</Defs>

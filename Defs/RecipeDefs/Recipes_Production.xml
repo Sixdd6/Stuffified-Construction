@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+  
+  <!-- =========== Resource Recipes =========== -->
+  
+	<RecipeDef>
+		<defName>MakeFelt</defName>
+		<label>Make Felt</label>
+		<description>Processes any non-synthetic fabric into Felt.</description>
+		<jobString>Making felt.</jobString>
+		<workAmount>400</workAmount>
+		<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.05</workSkillLearnFactor>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Textiles</li>
+					</categories>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<products>
+			<Felt>25</Felt>
+		</products>
+		<recipeUsers>
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+		</recipeUsers>
+		<fixedIngredientFilter>
+			<categories>
+				<li>PlantFabric</li>
+				<li>AnimalHair</li>
+				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeCharcoal</defName>
+		<label>Make Charcoal</label>
+		<description>Makes charcoal from wood.</description>
+		<jobString>Making charcoal.</jobString>
+		<workAmount>250</workAmount>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>WoodLogs</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<Charcoal>10</Charcoal>
+		</products>
+		<recipeUsers>
+			<li>Forge</li>
+			<li>ElectricSmelter</li>
+			<li>ElectricCrematorium</li>
+			<li>Campfire</li>
+		</recipeUsers>
+		<fixedIngredientFilter>
+			<categories>
+				<li>WoodLogs</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>SpinWire</defName>
+		<label>Spin Metal Wire</label>
+		<description>Makes metal wire out of any metal.</description>
+		<jobString>Making wire.</jobString>
+		<workAmount>1000</workAmount>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>BaseMetals</li>
+						<li>MetalAlloys</li>
+					</categories>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<products>
+			<Wire>25</Wire>
+		</products>
+		<recipeUsers>
+			<li>FueledSmithy</li>
+			<li>ElectricSmithy</li>
+		</recipeUsers>
+		<fixedIngredientFilter>
+			<categories>
+				<li>BaseMetals</li>
+				<li>MetalAlloys</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+  <!-- =========== Flooring Recipes =========== -->
+  
+	<RecipeDef>
+		<defName>MakeCarpeting</defName>
+		<label>Make Carpeting</label>
+		<description>Makes ready-to-lay carpet from various fabrics.</description>
+		<jobString>Making carpet.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.05</workSkillLearnFactor>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Textiles</li>
+					</categories>
+				</filter>
+				<count>35</count>
+			</li>
+		</ingredients>
+		<products>
+			<CarpetMaterial>5</CarpetMaterial>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Textiles</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<!-- =========== Item Recipes =========== -->
+  
+	<RecipeDef>
+		<defName>MakeIndustrialPDA</defName>
+		<label>Make Industrial PDA</label>
+		<description>Make an industrial PDA unit for use with industrial machinery.</description>
+		<jobString>Making industrial PDA.</jobString>
+		<workAmount>5000</workAmount>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>BaseMetals</li>
+						<li>MetalAlloys</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<IndustrialPDA>1</IndustrialPDA>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Component</li>
+			</thingDefs>
+			<categories>
+				<li>BaseMetals</li>
+				<li>MetalAlloys</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+</RecipeDefs>

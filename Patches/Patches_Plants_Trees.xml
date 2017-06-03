@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PlantTreeOak"]/harvestedThingDef</xpath>
+		<value>
+			<harvestedThingDef>OakLog</harvestedThingDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PlantTreeOak"]/label</xpath>
+		<value>
+			<label>Oak Tree</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PlantTreePoplar"]/harvestedThingDef</xpath>
+		<value>
+			<harvestedThingDef>PoplarLog</harvestedThingDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PlantTreePoplar"]/label</xpath>
+		<value>
+			<label>Poplar Tree</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PlantTreePine"]/harvestedThingDef</xpath>
+		<value>
+			<harvestedThingDef>PineLog</harvestedThingDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PlantTreePine"]/label</xpath>
+		<value>
+			<label>Pine Tree</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PlantTreeBirch"]/harvestedThingDef</xpath>
+		<value>
+			<harvestedThingDef>BirchLog</harvestedThingDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PlantTreeBirch"]/label</xpath>
+		<value>
+			<label>Birch Tree</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PlantTreeTeak"]/harvestedThingDef</xpath>
+		<value>
+			<harvestedThingDef>TeakLog</harvestedThingDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PlantTreeTeak"]/label</xpath>
+		<value>
+			<label>Teak Tree</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PlantTreeCecropia"]/harvestedThingDef</xpath>
+		<value>
+			<harvestedThingDef>CecropiaLog</harvestedThingDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PlantTreeCecropia"]/label</xpath>
+		<value>
+			<label>Cecropia Tree</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="BurnedTree"]/harvestedThingDef</xpath>
+		<value>
+			<harvestedThingDef>Charcoal</harvestedThingDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="BurnedTree"]/harvestYield</xpath>
+		<value>
+			<harvestYield>2</harvestYield>
+		</value>
+	</Operation>
+
+</Patch>

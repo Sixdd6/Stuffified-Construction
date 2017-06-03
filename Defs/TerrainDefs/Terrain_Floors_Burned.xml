@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TerrainDef Name="BurnedFloorBase" Abstract="True">
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <pathCost>9</pathCost>
+    <fertility>0</fertility>
+    <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <statBases>
+      <Beauty>-6</Beauty>
+    </statBases>
+  </TerrainDef>
+
+  <TerrainDef ParentName="BurnedFloorBase">
+    <defName>BurnedCarpet</defName>
+    <label>Burned Carpet</label>
+    <renderPrecedence>201</renderPrecedence>
+    <description>Burned-out carpet.</description>
+    <texturePath>Terrain/Surfaces/BurnedCarpet</texturePath>
+		<EdgeType>FadeRough</EdgeType>
+	</TerrainDef>
+
+</Defs>

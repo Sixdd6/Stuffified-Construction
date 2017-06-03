@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Jade"]/thingCategories</xpath>
+		<value>
+			<thingCategories>
+				<li>RareStoneBlocks</li>
+			</thingCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Jade"]/label</xpath>
+		<value>
+			<label>Jade</label>
+		</value>
+	</Operation>
+
+</Patch>

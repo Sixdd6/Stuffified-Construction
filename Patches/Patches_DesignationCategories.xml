@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="ElectricTailoringBench"]/DesignationCategory</xpath>
+		<value>
+			<DesignationCategory>Production2</DesignationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="ElectricSmithy"]/DesignationCategory</xpath>
+		<value>
+			<DesignationCategory>Production2</DesignationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="TableMachining"]/DesignationCategory</xpath>
+		<value>
+			<DesignationCategory>Production2</DesignationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="ElectricStove"]/DesignationCategory</xpath>
+		<value>
+			<DesignationCategory>Production2</DesignationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="ElectricSmelter"]/DesignationCategory</xpath>
+		<value>
+			<DesignationCategory>Production2</DesignationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Refinery"]/DesignationCategory</xpath>
+		<value>
+			<DesignationCategory>Production2</DesignationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="ComponentAssemblyBench"]/DesignationCategory</xpath>
+		<value>
+			<DesignationCategory>Production2</DesignationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="HiTechResearchBench"]/DesignationCategory</xpath>
+		<value>
+			<DesignationCategory>Production2</DesignationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="ElectricCrematorium"]/DesignationCategory</xpath>
+		<value>
+			<DesignationCategory>Production2</DesignationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="LongRangeMineralScanner"]/DesignationCategory</xpath>
+		<value>
+			<DesignationCategory>Production2</DesignationCategory>
+		</value>
+	</Operation>
+
+</Patch>

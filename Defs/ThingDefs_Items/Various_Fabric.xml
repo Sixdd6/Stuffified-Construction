@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="FabricBase" Name="Felt">
+    <defName>Felt</defName>
+    <label>Felt Cloth</label>
+    <description>A processed fabric of lower than average quality, made from any other kind of fabric.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Felt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(125,125,125)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>10</MaxHitPoints>
+      <MarketValue>0.25</MarketValue>
+      <Mass>0.026</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>6</DeteriorationRate>
+    </statBases>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <stuffAdjective>felt</stuffAdjective>
+      <color>(125,125,125)</color>
+      <commonality>0.9</commonality>
+		<statFactors>
+		  <WorkToMake>0.8</WorkToMake>
+		  <Beauty>0.8</Beauty>
+		  <MarketValue>0.1</MarketValue>
+		  <MaxHitPoints>0.25</MaxHitPoints>
+		  <Comfort>0.5</Comfort>
+		  <Flammability>1.0</Flammability>
+		</statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>SynthFabric</li>
+    </thingCategories>
+  </ThingDef>
+  
+</Defs>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+  <!-- ================= Carpets ================= -->
+
+  <TerrainDef Name="CarpetBase" Abstract="True">
+    <texturePath>Terrain/Surfaces/Carpet</texturePath>
+    <researchPrerequisites>
+      <li>CarpetMaking</li>
+    </researchPrerequisites>
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <designationCategory>Floors</designationCategory>
+    <Fertility>0</Fertility>
+    <constructEffect>ConstructDirt</constructEffect>
+    <AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <burnedDef>BurnedCarpet</burnedDef>
+    <CostList>
+      <CarpetMaterial>1</CarpetMaterial>
+    </CostList>
+    <statBases>
+      <WorkToMake>150</WorkToMake>
+      <Beauty>4</Beauty>
+      <Flammability>0.22</Flammability>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="CarpetBase" Name="CarpetRed">
+    <defName>CarpetRed</defName>
+    <label>Rosy Red Carpet</label>
+    <RenderPrecedence>200</RenderPrecedence>
+    <Description>Plush carpet in a lovely rose hue.</Description>
+    <color>(169,45,53)</color>
+  </TerrainDef>
+
+  <TerrainDef ParentName="CarpetBase" Name="CarpetYellow">
+    <defName>CarpetYellow</defName>
+    <label>Yellow Carpet</label>
+    <Description>Muted yellow carpet.</Description>
+    <color>(244,224,138)</color>
+  </TerrainDef>
+
+  <TerrainDef ParentName="CarpetBase" Name="CarpetGreen">
+    <defName>CarpetGreen</defName>
+    <label>Green Carpet</label>
+    <Description>Naturalistic-feeling green carpet.</Description>
+    <color>(183,207,121)</color>
+  </TerrainDef>
+
+  <TerrainDef ParentName="CarpetBase" Name="CarpetBlue">
+    <defName>CarpetBlue</defName>
+    <label>Light Blue Carpet</label>
+    <Description>Toe-hugging plush carpet in a cool blue color.</Description>
+    <color>(142,162,186)</color>
+  </TerrainDef>
+
+  <TerrainDef ParentName="CarpetBase" Name="CarpetPurple">
+    <defName>CarpetPurple</defName>
+    <label>Purple Carpet</label>
+    <Description>Rich purple plush carpeting. Fit for royalty.</Description>
+    <color>(80,64,77)</color>
+  </TerrainDef>
+
+  <TerrainDef ParentName="CarpetBase" Name="CarpetCream">
+    <defName>CarpetCream</defName>
+    <label>Taupe Carpet</label>
+    <Description>Inviting cream-colored carpet.</Description>
+    <color>(204,190,164)</color>
+  </TerrainDef>
+
+  <TerrainDef ParentName="CarpetBase" Name="CarpetDark">
+    <defName>CarpetDark</defName>
+    <label>Dark Grey Carpet</label>
+    <Description>Professional-looking dark grey carpet.</Description>
+    <color>(81,81,81)</color>
+  </TerrainDef>
+
+
+</TerrainDefs>

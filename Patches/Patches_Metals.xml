@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Silver"]/thingCategories</xpath>
+		<value>
+			<thingCategories>
+				<li>BaseMetals</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Gold"]/thingCategories</xpath>
+		<value>
+			<thingCategories>
+				<li>BaseMetals</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Steel"]/thingCategories</xpath>
+		<value>
+			<thingCategories>
+				<li>BaseMetals</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Plasteel"]/thingCategories</xpath>
+		<value>
+			<thingCategories>
+				<li>BaseMetals</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Uranium"]/thingCategories</xpath>
+		<value>
+			<thingCategories>
+				<li>BaseMetals</li>
+			</thingCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>/Resources/ThingDef[defName="EXP_Copper"]</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Resources/ThingDef[defName="EXP_Copper"]/thingCategories</xpath>
+			<value>
+				<thingCategories>
+					<li>BaseMetals</li>
+				</thingCategories>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>/Resources/ThingDef[defName="EXP_Lead"]</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Resources/ThingDef[defName="EXP_Lead"]/thingCategories</xpath>
+			<value>
+				<thingCategories>
+					<li>BaseMetals</li>
+				</thingCategories>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>/Resources/ThingDef[defName="EXP_Tin"]</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Resources/ThingDef[defName="EXP_Tin"]/thingCategories</xpath>
+			<value>
+				<thingCategories>
+					<li>BaseMetals</li>
+				</thingCategories>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>/Resources/ThingDef[defName="CAL_Aluminum"]</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Resources/ThingDef[defName="CAL_Aluminum"]/thingCategories</xpath>
+			<value>
+				<thingCategories>
+					<li>BaseMetals</li>
+				</thingCategories>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>/Resources/ThingDef[defName="CAL_Plumchalcum"]</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Resources/ThingDef[defName="CAL_Plumchalcum"]/thingCategories</xpath>
+			<value>
+				<thingCategories>
+					<li>MetalAlloys</li>
+				</thingCategories>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>/Resources/ThingDef[defName="CAL_Duralumin"]</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Resources/ThingDef[defName="CAL_Duralumin"]/thingCategories</xpath>
+			<value>
+				<thingCategories>
+					<li>MetalAlloys</li>
+				</thingCategories>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>/Resources/ThingDef[defName="CAL_Bronze"]</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Resources/ThingDef[defName="CAL_Bronze"]/thingCategories</xpath>
+			<value>
+				<thingCategories>
+					<li>MetalAlloys</li>
+				</thingCategories>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>/Resources/ThingDef[defName="CAL_Hepatzion"]</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Resources/ThingDef[defName="CAL_Hepatzion"]/thingCategories</xpath>
+			<value>
+				<thingCategories>
+					<li>MetalAlloys</li>
+				</thingCategories>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>/Resources/ThingDef[defName="CAL_Brass"]</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Resources/ThingDef[defName="CAL_Brass"]/thingCategories</xpath>
+			<value>
+				<thingCategories>
+					<li>MetalAlloys</li>
+				</thingCategories>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>/Resources/ThingDef[defName="CAL_Aurichalcum"]</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Resources/ThingDef[defName="CAL_Aurichalcum"]/thingCategories</xpath>
+			<value>
+				<thingCategories>
+					<li>MetalAlloys</li>
+				</thingCategories>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>/Resources/ThingDef[defName="CAL_SterlingSilver"]</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Resources/ThingDef[defName="CAL_SterlingSilver"]/thingCategories</xpath>
+			<value>
+				<thingCategories>
+					<li>MetalAlloys</li>
+				</thingCategories>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>/Resources/ThingDef[defName="CAL_RoseGold"]</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Resources/ThingDef[defName="CAL_RoseGold"]/thingCategories</xpath>
+			<value>
+				<thingCategories>
+					<li>MetalAlloys</li>
+				</thingCategories>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>/Resources/ThingDef[defName="CAL_Electrum"]</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Resources/ThingDef[defName="CAL_Electrum"]/thingCategories</xpath>
+			<value>
+				<thingCategories>
+					<li>MetalAlloys</li>
+				</thingCategories>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>/Resources/ThingDef[defName="CAL_BlackSteel"]</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Resources/ThingDef[defName="CAL_BlackSteel"]/thingCategories</xpath>
+			<value>
+				<thingCategories>
+					<li>MetalAlloys</li>
+				</thingCategories>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>/Resources/ThingDef[defName="CAL_Plastin"]</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Resources/ThingDef[defName="CAL_Plastin"]/thingCategories</xpath>
+			<value>
+				<thingCategories>
+					<li>MetalAlloys</li>
+				</thingCategories>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+</Patch>
