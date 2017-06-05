@@ -7,4 +7,4 @@
 > 
 > Includes new carpet colors with burned variant for the new burned floors.
 > 
-> Current compatibility for [url=https://ludeon.com/forums/index.php?topic=32190.0]Cupro's Alloys[/url], [url=https://ludeon.com/forums/index.php?topic=32190.0]Cupro's Stones[/url] and will add new matching wood types to [url=https://ludeon.com/forums/index.php?topic=12934.0]Vegetable Garden[/url] trees very soon.
+> Current compatibility for [Cupro's Alloys](https://ludeon.com/forums/index.php?topic=32190.0) and will add new matching wood types to [Vegetable Garden](https://ludeon.com/forums/index.php?topic=12934.0) trees very soon.
