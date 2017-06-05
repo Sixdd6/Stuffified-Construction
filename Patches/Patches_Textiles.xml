@@ -34,51 +34,78 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="MuffaloWool"]/label</xpath>
+		<xpath>*/ThingDef[defName="WoolMuffalo"]/label</xpath>
 		<value>
 			<label>Muffalo Wool</label>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="MuffaloWool"]/thingCategories</xpath>
-		<value>
-			<thingCategories>
-				<li>AnimalHair</li>
-			</thingCategories>
-		</value>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>*/ThingDef[defName="WoolMuffalo"]/thingCategories</xpath>
+			<!-- <success>Invert</success> -->
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="WoolMuffalo"]</xpath>
+			<value>
+				<thingCategories>
+					<li>AnimalHair</li>
+				</thingCategories>
+			</value>
+		</li>
+		</Operations>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="CamelHair"]/label</xpath>
+		<xpath>*/ThingDef[defName="WoolCamel"]/label</xpath>
 		<value>
 			<label>Camel Hair</label>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="CamelHair"]/thingCategories</xpath>
-		<value>
-			<thingCategories>
-				<li>AnimalHair</li>
-			</thingCategories>
-		</value>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>*/ThingDef[defName="WoolCamel"]/thingCategories</xpath>
+			<!-- <success>Invert</success> -->
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="WoolCamel"]</xpath>
+			<value>
+				<thingCategories>
+					<li>AnimalHair</li>
+				</thingCategories>
+			</value>
+		</li>
+		</Operations>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="AlpacaWool"]/label</xpath>
+		<xpath>*/ThingDef[defName="WoolAlpaca"]/label</xpath>
 		<value>
 			<label>Alpaca Wool</label>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="AlpacaWool"]/thingCategories</xpath>
-		<value>
-			<thingCategories>
-				<li>AnimalHair</li>
-			</thingCategories>
-		</value>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>*/ThingDef[defName="WoolAlpaca"]/thingCategories</xpath>
+			<!-- <success>Invert</success> -->
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="WoolAlpaca"]</xpath>
+			<value>
+				<thingCategories>
+					<li>AnimalHair</li>
+				</thingCategories>
+			</value>
+		</li>
+		</Operations>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
@@ -88,13 +115,22 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="WoolMegasloth"]/thingCategories</xpath>
-		<value>
-			<thingCategories>
-				<li>AnimalHair</li>
-			</thingCategories>
-		</value>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>*/ThingDef[defName="WoolMegasloth"]/thingCategories</xpath>
+			<!-- <success>Invert</success> -->
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="WoolMegasloth"]</xpath>
+			<value>
+				<thingCategories>
+					<li>AnimalHair</li>
+				</thingCategories>
+			</value>
+		</li>
+		</Operations>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
@@ -129,57 +165,60 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="RawCotton"]/label</xpath>
-		<value>
-			<label>Raw Cotton</label>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="RawFlax"]/label</xpath>
-		<value>
-			<label>Raw Flax</label>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="HempCloth"]/label</xpath>
-		<value>
-			<label>Hemp Cloth</label>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="HempCloth"]/thingCategories</xpath>
-		<value>
-			<thingCategories>
-				<li>PlantFabric</li>
-			</thingCategories>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="Flaxcloth"]/label</xpath>
-		<value>
-			<label>Linen Cloth</label>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="Flaxcloth"]/thingCategories</xpath>
-		<value>
-			<thingCategories>
-				<li>PlantFabric</li>
-			</thingCategories>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="BlendedLeather"]/label</xpath>
-		<value>
-			<label>Blended Leather</label>
-		</value>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>*/ThingDef[defName="VG_IronwoodLog"]</xpath>
+			<!-- <success>Invert</success> -->
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="RawCotton"]/label</xpath>
+			<value>
+				<label>Raw Cotton</label>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="RawFlax"]/label</xpath>
+			<value>
+				<label>Raw Flax</label>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="HempCloth"]/label</xpath>
+			<value>
+				<label>Hemp Cloth</label>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="HempCloth"]/thingCategories</xpath>
+			<value>
+				<thingCategories>
+					<li>PlantFabric</li>
+				</thingCategories>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="Flaxcloth"]/label</xpath>
+			<value>
+				<label>Linen Cloth</label>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="Flaxcloth"]/thingCategories</xpath>
+			<value>
+				<thingCategories>
+					<li>PlantFabric</li>
+				</thingCategories>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="BlendedLeather"]/label</xpath>
+			<value>
+				<label>Blended Leather</label>
+			</value>
+		</li>
+		</Operations>
 	</Operation>
 
 </Patch>

@@ -14,15 +14,18 @@
         <rect>(0.3,0,5.4,6)</rect>
       </damageData>
     </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>500</costStuffCount>
     <CostList>
-      <Steel>500</Steel>
       <Component>20</Component>
     </CostList>
     <AltitudeLayer>Building</AltitudeLayer>
     <fillPercent>1</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToMake>8000</WorkToMake>
+      <WorkToBuild>8000</WorkToBuild>
       <MaxHitPoints>400</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -68,6 +71,133 @@
       <li>IndustrialDrill</li>
     </researchPrerequisites>
     <terrainAffordanceNeeded>SmoothableStone</terrainAffordanceNeeded>
+  </ThingDef>
+
+  <ThingDef ParentName="BenchBase" Name="Anvil">
+    <defName>Anvil</defName>
+    <label>Anvil</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>A blacksmith's anvil. Allows smithing to be performed without the presence of technology, albeit slower than a proper smithing table.</Description>
+    <graphicData>
+      <texPath>Things/Building/Production/Anvil</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Cleanliness>-3</Cleanliness>
+      <WorkTableWorkSpeedFactor>0.4</WorkTableWorkSpeedFactor>
+    </statBases>
+    <Size>(1,1)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>PassThroughOnly</Passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <recipes>
+    </recipes>
+  </ThingDef>
+
+  <ThingDef ParentName="BenchBase" Name="Forge">
+    <defName>Forge</defName>
+    <label>Forge</label>
+    <ThingClass>Building_WorkTable_HeatPush</ThingClass>
+    <Description>An old coal-fueled method of smelting metals. Not as efficient as an electric smelter.</Description>
+    <graphicData>
+      <texPath>Things/Building/Production/Forge</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>170</costStuffCount>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>4000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+      <WorkTableWorkSpeedFactor>0.4</WorkTableWorkSpeedFactor>
+    </statBases>
+    <Size>(3,1)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>PassThroughOnly</Passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <recipes>
+      <li>ExtractMetalFromSlag</li>
+      <li>MakeCharcoal</li>
+      <li>SmeltWeapon</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(217,112,33,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>12</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>80.0</fuelConsumptionRate>
+        <fuelCapacity>50.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>Charcoal</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+      </li>
+    </comps>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <heatPerTickWhileWorking>0.5</heatPerTickWhileWorking>
+    </building>
   </ThingDef>
 
 </ThingDefs>

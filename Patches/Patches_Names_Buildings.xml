@@ -9,49 +9,49 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="TableSculpting"]/label</xpath>
+		<xpath>*/ThingDef[DefName="TableSculpting"]/label</xpath>
 		<value>
 			<label>Sculptor's Table</label>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="TableButcher"]/label</xpath>
+		<xpath>*/ThingDef[DefName="TableButcher"]/label</xpath>
 		<value>
 			<label>Butcher Table</label>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="HandTailoringBench"]/label</xpath>
+		<xpath>*/ThingDef[DefName="HandTailoringBench"]/label</xpath>
 		<value>
 			<label>Hand Tailoring Bench</label>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="ElectricTailoringBench"]/label</xpath>
+		<xpath>*/ThingDef[DefName="ElectricTailoringBench"]/label</xpath>
 		<value>
 			<label>Electric Tailoring Bench</label>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="FueledSmithy"]/label</xpath>
+		<xpath>*/ThingDef[DefName="FueledSmithy"]/label</xpath>
 		<value>
 			<label>Fueled Smithy</label>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="ElectricSmithy"]/label</xpath>
+		<xpath>*/ThingDef[DefName="ElectricSmithy"]/label</xpath>
 		<value>
 			<label>Electric Smithy</label>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="TableMachining"]/label</xpath>
+		<xpath>*/ThingDef[DefName="TableMachining"]/label</xpath>
 		<value>
 			<label>Machining Table</label>
 		</value>
@@ -72,28 +72,28 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="TableStonecutter"]/label</xpath>
+		<xpath>*/ThingDef[DefName="TableStonecutter"]/label</xpath>
 		<value>
 			<label>Stonecutter's Table</label>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="Brewery"]/label</xpath>
+		<xpath>*/ThingDef[DefName="Brewery"]/label</xpath>
 		<value>
 			<label>Brewery</label>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="DrugLab"]/label</xpath>
+		<xpath>*/ThingDef[DefName="DrugLab"]/label</xpath>
 		<value>
 			<label>Drug Lab</label>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="ElectricSmelter"]/label</xpath>
+		<xpath>*/ThingDef[DefName="ElectricSmelter"]/label</xpath>
 		<value>
 			<label>Electric Smelter</label>
 		</value>
@@ -128,7 +128,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="ElectricCrematorium"]/label</xpath>
+		<xpath>*/ThingDef[DefName="ElectricCrematorium"]/label</xpath>
 		<value>
 			<label>Electric Crematorium</label>
 		</value>
@@ -146,7 +146,7 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>/DesignationCategoryDef[defName="GardenTools"]</xpath>
-			<success>Invert</success>
+			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationReplace">
 			<xpath>*/ThingDef[defName="HydroponicsBasin"]/designationCategory</xpath>
@@ -169,7 +169,7 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>/DesignationCategoryDef[defName="VG_Brewing"]</xpath>
-			<success>Invert</success>
+			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationReplace">
 			<xpath>*/ThingDef[defName="FermentingBarrel"]/designationCategory</xpath>
@@ -198,13 +198,6 @@
 		<xpath>*/ThingDef[defName="Hopper"]/label</xpath>
 		<value>
 			<label>Hopper</label>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="DeepDrill"]/label</xpath>
-		<value>
-			<label>Deep Drill</label>
 		</value>
 	</Operation>
 
@@ -464,13 +457,6 @@
 		<xpath>*/ThingDef[defName="StandingLamp_Blue"]/label</xpath>
 		<value>
 			<label>Standing Lamp (Blue)</label>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="SunLamp"]/label</xpath>
-		<value>
-			<label>Sun Lamp</label>
 		</value>
 	</Operation>
 

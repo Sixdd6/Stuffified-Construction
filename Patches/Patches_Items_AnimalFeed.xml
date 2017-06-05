@@ -2,14 +2,14 @@
 <Patch>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[defName="Kibble"]/thingCategories/li</xpath>
+		<xpath>*/ThingDef[defName="Kibble"]/thingCategories/li</xpath>
 		<value>
 			<li>AnimalFeed</li>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[defName="Hay"]/thingCategories/li</xpath>
+		<xpath>*/ThingDef[defName="Hay"]/thingCategories/li</xpath>
 		<value>
 			<li>AnimalFeed</li>
 		</value>

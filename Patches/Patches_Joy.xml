@@ -11,7 +11,9 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="TubeTelevision"]/costList</xpath>
 		<value>
-			<Component>8</Component>
+			<costList>
+				<Component>8</Component>
+			</costList>
 		</value>
 	</Operation>
 

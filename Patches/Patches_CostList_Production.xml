@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="TableSculpting"]/stuffCategories</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+				<li>Woody</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="TableSculpting"]/costStuffCount</xpath>
+		<value>
+			<costStuffCount>125</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[DefName="TableSculpting"]/CostList</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="TableButcher"]/stuffCategories</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+				<li>Woody</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="TableButcher"]/costStuffCount</xpath>
+		<value>
+			<costStuffCount>95</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[DefName="TableButcher"]/CostList</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="ElectricTailoringBench"]/stuffCategories</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+				<li>Woody</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="ElectricTailoringBench"]/costStuffCount</xpath>
+		<value>
+			<costStuffCount>125</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="ElectricTailoringBench"]/CostList</xpath>
+		<value>
+			<costList>
+				<Component>3</Component>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[DefName="FueledSmithy"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+				<li>Stony</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[DefName="FueledSmithy"]</xpath>
+		<value>
+			<costStuffCount>100</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[DefName="FueledSmithy"]/CostList</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[DefName="ElectricSmithy"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+				<li>Stony</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[DefName="ElectricSmithy"]</xpath>
+		<value>
+			<costStuffCount>100</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="ElectricSmithy"]/CostList</xpath>
+		<value>
+			<costList>
+				<Component>4</Component>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[DefName="TableMachining"]/CostList</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[DefName="TableMachining"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[DefName="TableMachining"]</xpath>
+		<value>
+			<costStuffCount>150</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[DefName="TableMachining"]</xpath>
+		<value>
+			<costList>
+				<Component>5</Component>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="ElectricStove"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+				<li>Stony</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="ElectricStove"]</xpath>
+		<value>
+			<costStuffCount>80</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="ElectricStove"]/CostList</xpath>
+		<value>
+			<costList>
+				<Component>2</Component>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="FueledStove"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+				<li>Stony</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="FueledStove"]</xpath>
+		<value>
+			<costStuffCount>80</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="FueledStove"]/CostList</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="TableStonecutter"]/stuffCategories</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+				<li>Stony</li>
+				<li>Woody</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="TableStonecutter"]/costStuffCount</xpath>
+		<value>
+			<costStuffCount>105</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[DefName="TableStonecutter"]/CostList</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="FermentingBarrel"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Woody</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="FermentingBarrel"]</xpath>
+		<value>
+			<costStuffCount>30</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="FermentingBarrel"]/costList</xpath>
+		<value>
+			<costList>
+				<Steel>10</Steel>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="Refinery"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="Refinery"]</xpath>
+		<value>
+			<costStuffCount>150</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Refinery"]/costList</xpath>
+		<value>
+			<costList>
+				<Component>3</Component>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[DefName="ElectricSmelter"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[DefName="ElectricSmelter"]</xpath>
+		<value>
+			<costStuffCount>170</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="ElectricSmelter"]/CostList</xpath>
+		<value>
+			<costList>
+				<Component>2</Component>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="ElectricCrematorium"]/stuffCategories</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+				<li>Stony</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="ElectricCrematorium"]/costStuffCount</xpath>
+		<value>
+			<costStuffCount>170</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="ElectricCrematorium"]/costList</xpath>
+		<value>
+			<costList>
+				<Component>2</Component>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="SimpleResearchBench"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+				<li>Woody</li>
+				<li>Stony</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="SimpleResearchBench"]</xpath>
+		<value>
+			<costStuffCount>95</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="SimpleResearchBench"]/costList</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="HiTechResearchBench"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="HiTechResearchBench"]</xpath>
+		<value>
+			<costStuffCount>150</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="HiTechResearchBench"]/costList</xpath>
+		<value>
+			<costList>
+				<Component>10</Component>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="HydroponicsBasin"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="HydroponicsBasin"]</xpath>
+		<value>
+			<costStuffCount>100</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="HydroponicsBasin"]/costList</xpath>
+		<value>
+			<costList>
+				<Component>1</Component>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="NutrientPasteDispenser"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="NutrientPasteDispenser"]</xpath>
+		<value>
+			<costStuffCount>90</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="NutrientPasteDispenser"]/costList</xpath>
+		<value>
+			<costList>
+				<Component>3</Component>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="Hopper"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="Hopper"]</xpath>
+		<value>
+			<costStuffCount>15</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="Hopper"]/costList</xpath>
+	</Operation>
+
+</Patch>

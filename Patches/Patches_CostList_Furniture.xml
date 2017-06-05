@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="SunLamp"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="SunLamp"]</xpath>
+		<value>
+			<costStuffCount>25</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="SunLamp"]/costList</xpath>
+		<value>
+			<costList>
+				<Component>1</Component>
+			</costList>
+		</value>
+	</Operation>
+
+</Patch>

@@ -31,13 +31,13 @@
 			<success>Invert</success>
 		</li>
 		<li Class="PatchOperationInsert">
-			<xpath>*/ThingDef[defName="Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+			<xpath>*/ThingDef[defName="Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li</xpath>
 			<value>
 				<li>VG_IronwoodLog</li>
 			</value>
 		</li>
 		<li Class="PatchOperationInsert">
-			<xpath>*/ThingDef[defName="FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+			<xpath>*/ThingDef[defName="FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li</xpath>
 			<value>
 				<li>VG_IronwoodLog</li>
 			</value>
@@ -72,7 +72,7 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="Bamboo"]</xpath>
-			<success>Invert</success>
+			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationInsert">
 			<xpath>*/ThingDef[defName="Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
@@ -134,7 +134,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="FueledSmithy"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li</xpath>
+		<xpath>*/ThingDef[DefName="FueledSmithy"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li</xpath>
 		<value>
 			<li>Charcoal</li>
 			<li>Chemfuel</li>
@@ -154,7 +154,7 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="VG_Biofuel"]</xpath>
-			<success>Invert</success>
+			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationInsert">
 			<xpath>*/ThingDef[defName="FueledGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
@@ -163,7 +163,7 @@
 				</value>
 			</li>
 		<li Class="PatchOperationInsert">
-			<xpath>*/ThingDef[defName="FueledSmithy"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+			<xpath>*/ThingDef[DefName="FueledSmithy"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>VG_Biofuel</li>
 				</value>

@@ -65,47 +65,48 @@
   </RecipeDef>
 
   <RecipeDef ParentName="DrillMetalRecipeBase">
-  <defName>DrillAluminum</defName>
-  <label>Extract Aluminum</label>
-  <workAmount>6000</workAmount>
-    <products>
-      <CAL_Aluminum>10</CAL_Aluminum>
-    </products>
-  </RecipeDef>
-
-  <RecipeDef ParentName="DrillMetalRecipeBase">
-  <defName>DrillLead</defName>
-  <label>Extract Lead</label>
-  <workAmount>6000</workAmount>
-    <products>
-      <EXP_Lead>10</EXP_Lead>
-    </products>
-  </RecipeDef>
-
-  <RecipeDef ParentName="DrillMetalRecipeBase">
-  <defName>DrillTin</defName>
-  <label>Extract Tin</label>
-  <workAmount>6000</workAmount>
-    <products>
-      <EXP_Tin>10</EXP_Tin>
-    </products>
-  </RecipeDef>
-
-  <RecipeDef ParentName="DrillMetalRecipeBase">
-  <defName>DrillCopper</defName>
-  <label>Extract Copper</label>
-  <workAmount>6000</workAmount>
-    <products>
-      <EXP_Copper>10</EXP_Copper>
-    </products>
-  </RecipeDef>
-
-  <RecipeDef ParentName="DrillMetalRecipeBase">
 	<defName>DrillCoal</defName>
 	<label>Extract Coal</label>
 	<workAmount>6000</workAmount>
     <products>
       <Charcoal>25</Charcoal>
+    </products>
+  </RecipeDef>
+
+<!--  Begin Cupros Metals  -->
+  <RecipeDef ParentName="DrillMetalRecipeBase">
+    <defName>DrillAluminum</defName>
+    <label>Extract Aluminum</label>
+    <workAmount>6000</workAmount>
+    <products>
+      
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="DrillMetalRecipeBase">
+    <defName>DrillLead</defName>
+    <label>Extract Lead</label>
+    <workAmount>6000</workAmount>
+    <products>
+      
+    </products>
+  </RecipeDef>        
+
+  <RecipeDef ParentName="DrillMetalRecipeBase">
+    <defName>DrillTin</defName>
+    <label>Extract Tin</label>
+    <workAmount>6000</workAmount>
+    <products>
+      
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="DrillMetalRecipeBase">
+    <defName>DrillCopper</defName>
+    <label>Extract Copper</label>
+    <workAmount>6000</workAmount>
+    <products>
+      
     </products>
   </RecipeDef>
 

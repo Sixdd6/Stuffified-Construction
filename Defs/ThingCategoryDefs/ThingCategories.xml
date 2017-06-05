@@ -30,7 +30,7 @@
           <defName>SweetMeals</defName>
           <label>Sweets</label>
           <parent>FoodMeals</parent>
-          <iconPath>Ui/Icons/ThingCategories/Sweets</iconPath>
+          <iconPath>Ui/Icons/ThingCategories/FoodMeals</iconPath>
         </ThingCategoryDef>
 
       <ThingCategoryDef>
@@ -45,14 +45,14 @@
           <defName>AnimalFeed</defName>
           <label>Animal Feed</label>
           <parent>FoodRaw</parent>
-          <iconPath>Ui/Icons/ThingCategories/Feed</iconPath>
+          <iconPath>Ui/Icons/ThingCategories/FoodRaw</iconPath>
         </ThingCategoryDef>
 
         <ThingCategoryDef>
           <defName>CookingSupplies</defName>
           <label>Ingredients</label>
           <parent>FoodRaw</parent>
-          <iconPath>Ui/Icons/ThingCategories/Cookingstuff</iconPath>
+          <iconPath>Ui/Icons/ThingCategories/FoodRaw</iconPath>
         </ThingCategoryDef>
 
         <ThingCategoryDef>
@@ -73,7 +73,7 @@
           <defName>FruitFoodRaw</defName>
           <label>Fruit</label>
           <parent>FoodRaw</parent>
-          <iconPath>Ui/Icons/ThingCategories/FruitFoodRaw</iconPath>
+          <iconPath>Ui/Icons/ThingCategories/PlantFoodRaw</iconPath>
         </ThingCategoryDef>
 
         <ThingCategoryDef>
@@ -193,6 +193,13 @@
       <ThingCategoryDef>
         <defName>BaseMetals</defName>
         <label>Base Metals</label>
+        <parent>ResourcesRaw</parent>
+        <iconPath>Ui/Icons/ThingCategories/MetalIngots</iconPath>
+      </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>PreciousMetals</defName>
+        <label>Precious Metals</label>
         <parent>ResourcesRaw</parent>
         <iconPath>Ui/Icons/ThingCategories/MetalIngots</iconPath>
       </ThingCategoryDef>

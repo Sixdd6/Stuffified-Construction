@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PowerConduit"]/costList</xpath>
+		<value>
+			<costList>
+				<Wire>1</Wire>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PowerSwitch"]/costList</xpath>
+		<value>
+			<costList>
+				<Wire>5</Wire>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="FueledGenerator"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="FueledGenerator"]</xpath>
+		<value>
+			<costStuffCount>100</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="FueledGenerator"]/costList</xpath>
+		<value>
+			<costList>
+				<Component>2</Component>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="Battery"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="Battery"]</xpath>
+		<value>
+			<costStuffCount>50</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Battery"]/costList</xpath>
+		<value>
+			<costList>
+				<Component>2</Component>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="SolarGenerator"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="SolarGenerator"]</xpath>
+		<value>
+			<costStuffCount>100</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="SolarGenerator"]/costList</xpath>
+		<value>
+			<costList>
+				<Component>3</Component>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="WindTurbine"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="WindTurbine"]</xpath>
+		<value>
+			<costStuffCount>100</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="WindTurbine"]/costList</xpath>
+		<value>
+			<costList>
+				<Component>2</Component>
+			</costList>
+		</value>
+	</Operation>
+
+</Patch>
