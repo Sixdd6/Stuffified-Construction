@@ -70,7 +70,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[DefName="FueledSmithy"]</xpath>
+		<xpath>*/ThingDef[DefName="FueledSmithy"]/DefName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -80,7 +80,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[DefName="FueledSmithy"]</xpath>
+		<xpath>*/ThingDef[DefName="FueledSmithy"]/DefName</xpath>
 		<value>
 			<costStuffCount>100</costStuffCount>
 		</value>
@@ -91,7 +91,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[DefName="ElectricSmithy"]</xpath>
+		<xpath>*/ThingDef[DefName="ElectricSmithy"]/DefName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -101,7 +101,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[DefName="ElectricSmithy"]</xpath>
+		<xpath>*/ThingDef[DefName="ElectricSmithy"]/DefName</xpath>
 		<value>
 			<costStuffCount>100</costStuffCount>
 		</value>
@@ -121,7 +121,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[DefName="TableMachining"]</xpath>
+		<xpath>*/ThingDef[DefName="TableMachining"]/DefName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -130,14 +130,14 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[DefName="TableMachining"]</xpath>
+		<xpath>*/ThingDef[DefName="TableMachining"]/DefName</xpath>
 		<value>
 			<costStuffCount>150</costStuffCount>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[DefName="TableMachining"]</xpath>
+		<xpath>*/ThingDef[DefName="TableMachining"]/DefName</xpath>
 		<value>
 			<costList>
 				<Component>5</Component>
@@ -146,7 +146,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="ElectricStove"]</xpath>
+		<xpath>*/ThingDef[defName="ElectricStove"]/defName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -156,7 +156,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="ElectricStove"]</xpath>
+		<xpath>*/ThingDef[defName="ElectricStove"]/defName</xpath>
 		<value>
 			<costStuffCount>80</costStuffCount>
 		</value>
@@ -172,7 +172,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="FueledStove"]</xpath>
+		<xpath>*/ThingDef[defName="FueledStove"]/defName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -182,7 +182,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="FueledStove"]</xpath>
+		<xpath>*/ThingDef[defName="FueledStove"]/defName</xpath>
 		<value>
 			<costStuffCount>80</costStuffCount>
 		</value>
@@ -215,7 +215,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="FermentingBarrel"]</xpath>
+		<xpath>*/ThingDef[defName="FermentingBarrel"]/defName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Woody</li>
@@ -224,7 +224,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="FermentingBarrel"]</xpath>
+		<xpath>*/ThingDef[defName="FermentingBarrel"]/defName</xpath>
 		<value>
 			<costStuffCount>30</costStuffCount>
 		</value>
@@ -240,7 +240,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="Refinery"]</xpath>
+		<xpath>*/ThingDef[defName="Refinery"]/defName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -249,7 +249,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="Refinery"]</xpath>
+		<xpath>*/ThingDef[defName="Refinery"]/defName</xpath>
 		<value>
 			<costStuffCount>150</costStuffCount>
 		</value>
@@ -265,7 +265,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[DefName="ElectricSmelter"]</xpath>
+		<xpath>*/ThingDef[DefName="ElectricSmelter"]/DefName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -274,7 +274,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[DefName="ElectricSmelter"]</xpath>
+		<xpath>*/ThingDef[DefName="ElectricSmelter"]/DefName</xpath>
 		<value>
 			<costStuffCount>170</costStuffCount>
 		</value>
@@ -315,41 +315,10 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="SimpleResearchBench"]</xpath>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="HiTechResearchBench"]/costStuffCount</xpath>
 		<value>
-			<stuffCategories>
-				<li>Metallic</li>
-				<li>Woody</li>
-				<li>Stony</li>
-			</stuffCategories>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="SimpleResearchBench"]</xpath>
-		<value>
-			<costStuffCount>95</costStuffCount>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove">
-		<xpath>*/ThingDef[defName="SimpleResearchBench"]/costList</xpath>
-	</Operation>
-
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="HiTechResearchBench"]</xpath>
-		<value>
-			<stuffCategories>
-				<li>Metallic</li>
-			</stuffCategories>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="HiTechResearchBench"]</xpath>
-		<value>
-			<costStuffCount>150</costStuffCount>
+			<costStuffCount>250</costStuffCount>
 		</value>
 	</Operation>
 
@@ -363,7 +332,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="HydroponicsBasin"]</xpath>
+		<xpath>*/ThingDef[defName="HydroponicsBasin"]/defName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -372,7 +341,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="HydroponicsBasin"]</xpath>
+		<xpath>*/ThingDef[defName="HydroponicsBasin"]/defName</xpath>
 		<value>
 			<costStuffCount>100</costStuffCount>
 		</value>
@@ -388,7 +357,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="NutrientPasteDispenser"]</xpath>
+		<xpath>*/ThingDef[defName="NutrientPasteDispenser"]/defName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -397,7 +366,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="NutrientPasteDispenser"]</xpath>
+		<xpath>*/ThingDef[defName="NutrientPasteDispenser"]/defName</xpath>
 		<value>
 			<costStuffCount>90</costStuffCount>
 		</value>
@@ -413,7 +382,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="Hopper"]</xpath>
+		<xpath>*/ThingDef[defName="Hopper"]/defName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -422,7 +391,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="Hopper"]</xpath>
+		<xpath>*/ThingDef[defName="Hopper"]/defName</xpath>
 		<value>
 			<costStuffCount>15</costStuffCount>
 		</value>

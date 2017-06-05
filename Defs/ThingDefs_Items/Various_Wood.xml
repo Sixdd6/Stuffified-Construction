@@ -214,6 +214,8 @@
     </stuffProps>
   </ThingDef>
 
+
+<!--  Vegetable Garden Woods  -->
   <ThingDef ParentName="WoodLog" Name="WoodEbony">
     <defName>WoodEbony</defName>
     <label>Ebony Logs</label>
