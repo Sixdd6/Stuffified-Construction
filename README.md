@@ -3,8 +3,6 @@
 > 
 > Includes a new drilling rig that allows you to mine up small amounts of metals, not intended as a primary source of metal but a good option for playing on flat maps after you've exhausted all of your mineral supplies.
 > 
-> Lowers the power requirement for Electric Lamps to 20w per lamp.
-> 
 > Includes new carpet colors with burned variant for the new burned floors.
 > 
 > Current compatibility for [Cupro's Alloys](https://ludeon.com/forums/index.php?topic=32190.0) and will add new matching wood types to [Vegetable Garden](https://ludeon.com/forums/index.php?topic=12934.0) trees very soon.
