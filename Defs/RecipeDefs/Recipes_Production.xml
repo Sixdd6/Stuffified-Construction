@@ -146,48 +146,5 @@
 	</RecipeDef>
 
 	<!-- =========== Item Recipes =========== -->
-  
-	<RecipeDef>
-		<defName>MakeIndustrialPDA</defName>
-		<label>Make Industrial PDA</label>
-		<description>Make an industrial PDA unit for use with industrial machinery.</description>
-		<jobString>Making industrial PDA.</jobString>
-		<workAmount>5000</workAmount>
-		<workSpeedStat>SmithingSpeed</workSpeedStat>
-		<workSkill>Crafting</workSkill>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_Machining</soundWorking>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Component</li>
-					</thingDefs>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>BaseMetals</li>
-						<li>MetalAlloys</li>
-					</categories>
-				</filter>
-				<count>10</count>
-			</li>
-		</ingredients>
-		<products>
-			<IndustrialPDA>1</IndustrialPDA>
-		</products>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Component</li>
-			</thingDefs>
-			<categories>
-				<li>BaseMetals</li>
-				<li>MetalAlloys</li>
-			</categories>
-		</fixedIngredientFilter>
-	</RecipeDef>
 
 </RecipeDefs>
