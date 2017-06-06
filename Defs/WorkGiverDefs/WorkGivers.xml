@@ -38,21 +38,4 @@
     <prioritizeSustains>true</prioritizeSustains>
   </WorkGiverDef>
 
-  <WorkGiverDef Name="DoBillsDrill">
-    <defName>DoBillsDrill</defName>
-    <label>use drilling rig</label>
-    <giverClass>WorkGiver_DoBill</giverClass>
-    <workType>Mining</workType>
-    <priorityInType>115</priorityInType>
-    <fixedBillGiverDefs>
-      <li>DrillRigIndustrial</li>
-    </fixedBillGiverDefs>
-    <verb>drill</verb>
-    <gerund>drilling at</gerund>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-    <prioritizeSustains>true</prioritizeSustains>
-  </WorkGiverDef>
-
 </WorkGivers>
