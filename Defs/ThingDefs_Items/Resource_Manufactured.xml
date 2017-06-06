@@ -60,31 +60,4 @@
     </thingCategories>
   </ThingDef>
 
-  <!--  Items  -->
-
-  <ThingDef ParentName="ResourceBase" Name="IndustrialPDA">
-    <defName>IndustrialPDA</defName>
-    <label>Industrial PDA</label>
-    <description>A device intended for use with heavy industrial devices. It enables the user to control the machinery with great precision.</description>
-    <graphicData>
-      <texPath>Things/Item/Special/IndustrialPDA</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <stackLimit>1</stackLimit>
-    <tradeNeverStack>true</tradeNeverStack>
-    <useHitPoints>true</useHitPoints>
-    <statBases>
-      <MarketValue>250</MarketValue>
-      <MaxHitPoints>80</MaxHitPoints>
-    </statBases>
-    <thingCategories>
-      <li>Items</li>
-    </thingCategories>
-    <drawGUIOverlay>false</drawGUIOverlay>
-    <tradeTags>
-      <li>Exotic</li>
-    </tradeTags>
-  </ThingDef>
-
 </Defs>
