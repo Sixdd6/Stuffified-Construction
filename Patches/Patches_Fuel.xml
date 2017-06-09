@@ -1,94 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li</xpath>
-		<value>
-			<li>WoodLog</li>
-			<li>WoodBirch</li>
-			<li>WoodCecropia</li>
-			<li>WoodOak</li>
-			<li>WoodPine</li>
-			<li>WoodPoplar</li>
-			<li>WoodSaguaro</li>
-			<li>WoodTeak</li>
-			<li>WoodEbony</li>
-			<li>WoodAmaranth</li>
-			<li>WoodWillow</li>
-			<li>WoodMaple</li>
-			<li>WoodCherry</li>
-			<li>WoodCamellia</li>
-			<li>WoodAcacia</li>
-			<li>WoodPalm</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<Operations>
-			<li Class="PatchOperationTest">
-			<xpath>*/ThingDef[defName="VG_IronwoodLog"]</xpath>
-			<success>Invert</success>
-		</li>
-		<li Class="PatchOperationInsert">
-			<xpath>*/ThingDef[defName="Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li</xpath>
-			<value>
-				<li>VG_IronwoodLog</li>
-			</value>
-		</li>
-		<li Class="PatchOperationInsert">
-			<xpath>*/ThingDef[defName="FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li</xpath>
-			<value>
-				<li>VG_IronwoodLog</li>
-			</value>
-		</li>
-		</Operations>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li</xpath>
-		<value>
-			<li>WoodLog</li>
-			<li>WoodBirch</li>
-			<li>WoodCecropia</li>
-			<li>WoodOak</li>
-			<li>WoodPine</li>
-			<li>WoodPoplar</li>
-			<li>WoodSaguaro</li>
-			<li>WoodTeak</li>
-			<li>WoodEbony</li>
-			<li>WoodAmaranth</li>
-			<li>WoodWillow</li>
-			<li>WoodMaple</li>
-			<li>WoodCherry</li>
-			<li>WoodCamellia</li>
-			<li>WoodAcacia</li>
-			<li>WoodPalm</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<Operations>
-			<li Class="PatchOperationTest">
-			<xpath>*/ThingDef[defName="Bamboo"]</xpath>
-			<!-- <success>Invert</success> -->
-		</li>
-		<li Class="PatchOperationInsert">
-			<xpath>*/ThingDef[defName="Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
-			<value>
-				<li>Bamboo</li>
-			</value>
-		</li>
-		<li Class="PatchOperationInsert">
-			<xpath>*/ThingDef[defName="FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
-			<value>
-				<li>Bamboo</li>
-			</value>
-		</li>
-		</Operations>
-	</Operation>
-
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<Operations>
@@ -125,6 +37,149 @@
 		</Operations>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+		<order>Append</order>
+		<value>
+			<li>WoodBirch</li>
+			<li>WoodCecropia</li>
+			<li>WoodOak</li>
+			<li>WoodPine</li>
+			<li>WoodPoplar</li>
+			<li>WoodSaguaro</li>
+			<li>WoodTeak</li>
+			<li>WoodEbony</li>
+			<li>WoodAmaranth</li>
+			<li>WoodWillow</li>
+			<li>WoodMaple</li>
+			<li>WoodCherry</li>
+			<li>WoodCamellia</li>
+			<li>WoodAcacia</li>
+			<li>WoodPalm</li>
+			<li>Charcoal</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="TorchLamp"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+		<order>Append</order>
+		<value>
+			<li>WoodBirch</li>
+			<li>WoodCecropia</li>
+			<li>WoodOak</li>
+			<li>WoodPine</li>
+			<li>WoodPoplar</li>
+			<li>WoodSaguaro</li>
+			<li>WoodTeak</li>
+			<li>WoodEbony</li>
+			<li>WoodAmaranth</li>
+			<li>WoodWillow</li>
+			<li>WoodMaple</li>
+			<li>WoodCherry</li>
+			<li>WoodCamellia</li>
+			<li>WoodAcacia</li>
+			<li>WoodPalm</li>
+			<li>Charcoal</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelConsumptionRate</xpath>
+		<value>
+			<fuelConsumptionRate>4</fuelConsumptionRate>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>*/ThingDef[defName="VG_IronwoodLog"]</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+			<order>Append</order>
+			<value>
+				<li>VG_IronwoodLog</li>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+			<order>Append</order>
+			<value>
+				<li>VG_IronwoodLog</li>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="TorchLamp"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+			<order>Append</order>
+			<value>
+				<li>VG_IronwoodLog</li>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li</xpath>
+		<value>
+			<li>WoodBirch</li>
+			<li>WoodCecropia</li>
+			<li>WoodOak</li>
+			<li>WoodPine</li>
+			<li>WoodPoplar</li>
+			<li>WoodSaguaro</li>
+			<li>WoodTeak</li>
+			<li>WoodEbony</li>
+			<li>WoodAmaranth</li>
+			<li>WoodWillow</li>
+			<li>WoodMaple</li>
+			<li>WoodCherry</li>
+			<li>WoodCamellia</li>
+			<li>WoodAcacia</li>
+			<li>WoodPalm</li>
+			<li>Charcoal</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>*/ThingDef[defName="Bamboo"]</xpath>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+			<order>Append</order>
+			<value>
+				<li>Bamboo</li>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+			<order>Append</order>
+			<value>
+				<li>Bamboo</li>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+			<order>Append</order>
+			<value>
+				<li>Bamboo</li>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="TorchLamp"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+			<order>Append</order>
+			<value>
+				<li>Bamboo</li>
+			</value>
+		</li>
+		</Operations>
+	</Operation>
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="FueledGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li</xpath>
 		<value>
@@ -156,22 +211,87 @@
 			<xpath>*/ThingDef[defName="VG_Biofuel"]</xpath>
 			<!-- <success>Invert</success> -->
 		</li>
-		<li Class="PatchOperationInsert">
+		<li Class="PatchOperationAdd">
 			<xpath>*/ThingDef[defName="FueledGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+			<order>Append</order>
 				<value>
 					<li>VG_Biofuel</li>
 				</value>
 			</li>
-		<li Class="PatchOperationInsert">
+		<li Class="PatchOperationAdd">
 			<xpath>*/ThingDef[DefName="FueledSmithy"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+			<order>Append</order>
 				<value>
 					<li>VG_Biofuel</li>
 				</value>
 			</li>
-		<li Class="PatchOperationInsert">
+		<li Class="PatchOperationAdd">
 			<xpath>*/ThingDef[defName="Forge"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+			<order>Append</order>
 				<value>
 					<li>VG_Biofuel</li>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>*/ThingDef[DefName="HandCanningstove"]</xpath>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[DefName="HandCanningstove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+			<order>Append</order>
+				<value>
+					<li>WoodBirch</li>
+					<li>WoodCecropia</li>
+					<li>WoodOak</li>
+					<li>WoodPine</li>
+					<li>WoodPoplar</li>
+					<li>WoodSaguaro</li>
+					<li>WoodTeak</li>
+					<li>WoodEbony</li>
+					<li>WoodAmaranth</li>
+					<li>WoodWillow</li>
+					<li>WoodMaple</li>
+					<li>WoodCherry</li>
+					<li>WoodCamellia</li>
+					<li>WoodAcacia</li>
+					<li>WoodPalm</li>
+					<li>Charcoal</li>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>*/ThingDef[DefName="Oven"]</xpath>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[DefName="Oven"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+			<order>Append</order>
+				<value>
+					<li>WoodBirch</li>
+					<li>WoodCecropia</li>
+					<li>WoodOak</li>
+					<li>WoodPine</li>
+					<li>WoodPoplar</li>
+					<li>WoodSaguaro</li>
+					<li>WoodTeak</li>
+					<li>WoodEbony</li>
+					<li>WoodAmaranth</li>
+					<li>WoodWillow</li>
+					<li>WoodMaple</li>
+					<li>WoodCherry</li>
+					<li>WoodCamellia</li>
+					<li>WoodAcacia</li>
+					<li>WoodPalm</li>
+					<li>Charcoal</li>
 				</value>
 			</li>
 		</Operations>

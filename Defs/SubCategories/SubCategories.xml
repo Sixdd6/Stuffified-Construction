@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+        <defName>SubCategory_CAL_MetalTile_Floors</defName>
+        <label>Smooth Metal</label>
+        <description>Tiles made of metal.</description>
+        <defNames>
+            <!-- Vanilla -->
+            <li>MetalTile</li>
+            <li>SilverTile</li>
+            <li>GoldTile</li>
+            <li>SterileTile</li>
+            <li>PlasteelTile</li>
+            <!-- Cupro's Alloys -->
+            <li>EXP_CopperTile</li>
+            <li>EXP_LeadTile</li>
+            <li>CAL_TinTile</li>
+            <li>CAL_AluminumTile</li>
+            <li>CAL_PlumchalcumTile</li>
+            <li>CAL_DuraluminTile</li>
+            <li>CAL_BronzeTile</li>
+            <li>CAL_HepatzionTile</li>
+            <li>CAL_BrassTile</li>
+            <li>CAL_AurichalcumTile</li>
+            <li>CAL_SterlingSilverTile</li>
+            <li>CAL_RoseGoldTile</li>
+            <li>CAL_ElectrumTile</li>
+            <li>CAL_BlackSteelTile</li>
+            <li>CAL_PlastinTile</li>
+            <!-- Glitterworld Tech -->
+            <li>TitatiumTile</li>
+            <li>AlphaTile</li>
+            <li>BetaTile</li>
+        </defNames>
+        <designationCategory>Floors</designationCategory>
+        <emulateStuff>false</emulateStuff>
+        <preview>false</preview>
+    </ArchitectSense.DesignationSubCategoryDef>    
+
+
+
+    <ArchitectSense.DesignationSubCategoryDef>
+        <defName>SubCategory_CAL_StoneTile_Floors</defName>
+        <label>Even Brick</label>
+        <description>Tiles made of stone.</description>
+        <defNames>
+            <li>TileSandstone</li>
+            <li>TileGranite</li>
+            <li>TileLimestone</li>
+            <li>TileSlate</li>
+            <li>TileMarble</li>
+            <li>TileClaystone</li>
+            <li>TileAndesite</li>
+            <li>TileRhyolite</li>
+            <li>TileGneiss</li>
+            <li>TileQuartzite</li>
+            <li>TileSchist</li>
+            <li>TileGabbro</li>
+            <li>TileDiorite</li>
+            <li>TileDunite</li>
+            <li>TilePegmatite</li>
+        </defNames>
+        <designationCategory>Floors</designationCategory>
+        <emulateStuff>false</emulateStuff>
+        <preview>false</preview>
+    </ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>

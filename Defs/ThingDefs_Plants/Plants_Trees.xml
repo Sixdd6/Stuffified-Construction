@@ -22,6 +22,8 @@
 				<min>0</min>
 				<max>0</max>
 			</wildClusterSizeRange>
+			<sowResearchPrerequisites>
+			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>
 

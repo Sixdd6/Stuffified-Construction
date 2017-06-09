@@ -19,7 +19,7 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationInsert">
+	<Operation Class="PatchOperationAdd">
 		<xpath>*/ThingDef[defName="FueledGenerator"]</xpath>
 		<value>
 			<stuffCategories>
@@ -28,7 +28,7 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationInsert">
+	<Operation Class="PatchOperationAdd">
 		<xpath>*/ThingDef[defName="FueledGenerator"]</xpath>
 		<value>
 			<costStuffCount>100</costStuffCount>
@@ -44,7 +44,11 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationInsert">
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="FueledGenerator"]/constructEffect</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
 		<xpath>*/ThingDef[defName="Battery"]</xpath>
 		<value>
 			<stuffCategories>
@@ -53,7 +57,7 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationInsert">
+	<Operation Class="PatchOperationAdd">
 		<xpath>*/ThingDef[defName="Battery"]</xpath>
 		<value>
 			<costStuffCount>50</costStuffCount>
@@ -69,7 +73,11 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationInsert">
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="Battery"]/constructEffect</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
 		<xpath>*/ThingDef[defName="SolarGenerator"]</xpath>
 		<value>
 			<stuffCategories>
@@ -78,7 +86,7 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationInsert">
+	<Operation Class="PatchOperationAdd">
 		<xpath>*/ThingDef[defName="SolarGenerator"]</xpath>
 		<value>
 			<costStuffCount>100</costStuffCount>
@@ -94,7 +102,11 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationInsert">
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="SolarGenerator"]/constructEffect</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
 		<xpath>*/ThingDef[defName="WindTurbine"]</xpath>
 		<value>
 			<stuffCategories>
@@ -103,7 +115,7 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationInsert">
+	<Operation Class="PatchOperationAdd">
 		<xpath>*/ThingDef[defName="WindTurbine"]</xpath>
 		<value>
 			<costStuffCount>100</costStuffCount>
@@ -117,6 +129,10 @@
 				<Component>2</Component>
 			</costList>
 		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="WindTurbine"]/constructEffect</xpath>
 	</Operation>
 
 </Patch>

@@ -23,7 +23,7 @@
 		<xpath>/Defs/ThingDef[defName="Steel"]/thingCategories</xpath>
 		<value>
 			<thingCategories>
-				<li>BaseMetals</li>
+				<li>MetalAlloys</li>
 			</thingCategories>
 		</value>
 	</Operation>
@@ -32,7 +32,7 @@
 		<xpath>/Defs/ThingDef[defName="Plasteel"]/thingCategories</xpath>
 		<value>
 			<thingCategories>
-				<li>BaseMetals</li>
+				<li>MetalAlloys</li>
 			</thingCategories>
 		</value>
 	</Operation>
@@ -50,11 +50,10 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>/Resources/ThingDef[defName="EXP_Copper"]</xpath>
-			<!-- <success>Invert</success> -->
+			<xpath>*/ThingDef[defName="EXP_Copper"]</xpath>
 		</li>
 		<li Class="PatchOperationReplace">
-			<xpath>/Resources/ThingDef[defName="EXP_Copper"]/thingCategories</xpath>
+			<xpath>*/ThingDef[defName="EXP_Copper"]/thingCategories</xpath>
 			<value>
 				<thingCategories>
 					<li>BaseMetals</li>
@@ -68,11 +67,11 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>/Resources/ThingDef[defName="EXP_Lead"]</xpath>
+			<xpath>*/ThingDef[defName="EXP_Lead"]</xpath>
 			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationReplace">
-			<xpath>/Resources/ThingDef[defName="EXP_Lead"]/thingCategories</xpath>
+			<xpath>*/ThingDef[defName="EXP_Lead"]/thingCategories</xpath>
 			<value>
 				<thingCategories>
 					<li>BaseMetals</li>
@@ -86,12 +85,12 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>/Resources/ThingDef[defName="EXP_Tin"]</xpath>
+			<xpath>*/ThingDef[defName="EXP_Tin"]</xpath>
 			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>/Resources/ThingDef[defName="EXP_Tin"]/thingCategories</xpath>
+			<xpath>*/ThingDef[defName="EXP_Tin"]/thingCategories</xpath>
 			<value>
 				<thingCategories>
 					<li>BaseMetals</li>
@@ -105,11 +104,11 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>/Resources/ThingDef[defName="CAL_Aluminum"]</xpath>
+			<xpath>*/ThingDef[defName="CAL_Aluminum"]</xpath>
 			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationReplace">
-			<xpath>/Resources/ThingDef[defName="CAL_Aluminum"]/thingCategories</xpath>
+			<xpath>*/ThingDef[defName="CAL_Aluminum"]/thingCategories</xpath>
 			<value>
 				<thingCategories>
 					<li>BaseMetals</li>
@@ -123,11 +122,11 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>/Resources/ThingDef[defName="CAL_Plumchalcum"]</xpath>
+			<xpath>*/ThingDef[defName="CAL_Plumchalcum"]</xpath>
 			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationReplace">
-			<xpath>/Resources/ThingDef[defName="CAL_Plumchalcum"]/thingCategories</xpath>
+			<xpath>*/ThingDef[defName="CAL_Plumchalcum"]/thingCategories</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
@@ -141,11 +140,11 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>/Resources/ThingDef[defName="CAL_Duralumin"]</xpath>
+			<xpath>*/ThingDef[defName="CAL_Duralumin"]</xpath>
 			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationReplace">
-			<xpath>/Resources/ThingDef[defName="CAL_Duralumin"]/thingCategories</xpath>
+			<xpath>*/ThingDef[defName="CAL_Duralumin"]/thingCategories</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
@@ -159,11 +158,11 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>/Resources/ThingDef[defName="CAL_Bronze"]</xpath>
+			<xpath>*/ThingDef[defName="CAL_Bronze"]</xpath>
 			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationReplace">
-			<xpath>/Resources/ThingDef[defName="CAL_Bronze"]/thingCategories</xpath>
+			<xpath>*/ThingDef[defName="CAL_Bronze"]/thingCategories</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
@@ -177,11 +176,11 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>/Resources/ThingDef[defName="CAL_Hepatzion"]</xpath>
+			<xpath>*/ThingDef[defName="CAL_Hepatzion"]</xpath>
 			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationReplace">
-			<xpath>/Resources/ThingDef[defName="CAL_Hepatzion"]/thingCategories</xpath>
+			<xpath>*/ThingDef[defName="CAL_Hepatzion"]/thingCategories</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
@@ -195,11 +194,11 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>/Resources/ThingDef[defName="CAL_Brass"]</xpath>
+			<xpath>*/ThingDef[defName="CAL_Brass"]</xpath>
 			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationReplace">
-			<xpath>/Resources/ThingDef[defName="CAL_Brass"]/thingCategories</xpath>
+			<xpath>*/ThingDef[defName="CAL_Brass"]/thingCategories</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
@@ -213,11 +212,11 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>/Resources/ThingDef[defName="CAL_Aurichalcum"]</xpath>
+			<xpath>*/ThingDef[defName="CAL_Aurichalcum"]</xpath>
 			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationReplace">
-			<xpath>/Resources/ThingDef[defName="CAL_Aurichalcum"]/thingCategories</xpath>
+			<xpath>*/ThingDef[defName="CAL_Aurichalcum"]/thingCategories</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
@@ -231,11 +230,11 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>/Resources/ThingDef[defName="CAL_SterlingSilver"]</xpath>
+			<xpath>*/ThingDef[defName="CAL_SterlingSilver"]</xpath>
 			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationReplace">
-			<xpath>/Resources/ThingDef[defName="CAL_SterlingSilver"]/thingCategories</xpath>
+			<xpath>*/ThingDef[defName="CAL_SterlingSilver"]/thingCategories</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
@@ -249,11 +248,11 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>/Resources/ThingDef[defName="CAL_RoseGold"]</xpath>
+			<xpath>*/ThingDef[defName="CAL_RoseGold"]</xpath>
 			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationReplace">
-			<xpath>/Resources/ThingDef[defName="CAL_RoseGold"]/thingCategories</xpath>
+			<xpath>*/ThingDef[defName="CAL_RoseGold"]/thingCategories</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
@@ -267,11 +266,11 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>/Resources/ThingDef[defName="CAL_Electrum"]</xpath>
+			<xpath>*/ThingDef[defName="CAL_Electrum"]</xpath>
 			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationReplace">
-			<xpath>/Resources/ThingDef[defName="CAL_Electrum"]/thingCategories</xpath>
+			<xpath>*/ThingDef[defName="CAL_Electrum"]/thingCategories</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
@@ -285,11 +284,11 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>/Resources/ThingDef[defName="CAL_BlackSteel"]</xpath>
+			<xpath>*/ThingDef[defName="CAL_BlackSteel"]</xpath>
 			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationReplace">
-			<xpath>/Resources/ThingDef[defName="CAL_BlackSteel"]/thingCategories</xpath>
+			<xpath>*/ThingDef[defName="CAL_BlackSteel"]/thingCategories</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
@@ -303,11 +302,11 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>/Resources/ThingDef[defName="CAL_Plastin"]</xpath>
+			<xpath>*/ThingDef[defName="CAL_Plastin"]</xpath>
 			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationReplace">
-			<xpath>/Resources/ThingDef[defName="CAL_Plastin"]/thingCategories</xpath>
+			<xpath>*/ThingDef[defName="CAL_Plastin"]/thingCategories</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>

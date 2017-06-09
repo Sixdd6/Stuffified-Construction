@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="OrbitalTradeBeacon"]</xpath>
+		<xpath>*/ThingDef[defName="OrbitalTradeBeacon"]/defName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -11,7 +11,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="OrbitalTradeBeacon"]</xpath>
+		<xpath>*/ThingDef[defName="OrbitalTradeBeacon"]/defName</xpath>
 		<value>
 			<costStuffCount>50</costStuffCount>
 		</value>
@@ -27,7 +27,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="CommsConsole"]</xpath>
+		<xpath>*/ThingDef[defName="CommsConsole"]/defName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -36,7 +36,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="CommsConsole"]</xpath>
+		<xpath>*/ThingDef[defName="CommsConsole"]/defName</xpath>
 		<value>
 			<costStuffCount>120</costStuffCount>
 		</value>
@@ -52,7 +52,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="FirefoamPopper"]</xpath>
+		<xpath>*/ThingDef[defName="FirefoamPopper"]/defName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -61,7 +61,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="FirefoamPopper"]</xpath>
+		<xpath>*/ThingDef[defName="FirefoamPopper"]/defName</xpath>
 		<value>
 			<costStuffCount>100</costStuffCount>
 		</value>
@@ -77,7 +77,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="MoisturePump"]</xpath>
+		<xpath>*/ThingDef[defName="MoisturePump"]/defName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -86,7 +86,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="MoisturePump"]</xpath>
+		<xpath>*/ThingDef[defName="MoisturePump"]/defName</xpath>
 		<value>
 			<costStuffCount>75</costStuffCount>
 		</value>
@@ -102,7 +102,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="GroundPenetratingScanner"]</xpath>
+		<xpath>*/ThingDef[defName="GroundPenetratingScanner"]/defName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -111,7 +111,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="GroundPenetratingScanner"]</xpath>
+		<xpath>*/ThingDef[defName="GroundPenetratingScanner"]/defName</xpath>
 		<value>
 			<costStuffCount>400</costStuffCount>
 		</value>
@@ -127,7 +127,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="LongRangeMineralScanner"]</xpath>
+		<xpath>*/ThingDef[defName="LongRangeMineralScanner"]/defName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -136,7 +136,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="LongRangeMineralScanner"]</xpath>
+		<xpath>*/ThingDef[defName="LongRangeMineralScanner"]/defName</xpath>
 		<value>
 			<costStuffCount>200</costStuffCount>
 		</value>
@@ -152,7 +152,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="PodLauncher"]</xpath>
+		<xpath>*/ThingDef[defName="PodLauncher"]/defName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -161,7 +161,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="PodLauncher"]</xpath>
+		<xpath>*/ThingDef[defName="PodLauncher"]/defName</xpath>
 		<value>
 			<costStuffCount>80</costStuffCount>
 		</value>
@@ -177,7 +177,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="TransportPod"]</xpath>
+		<xpath>*/ThingDef[defName="TransportPod"]/defName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -186,7 +186,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="TransportPod"]</xpath>
+		<xpath>*/ThingDef[defName="TransportPod"]/defName</xpath>
 		<value>
 			<costStuffCount>80</costStuffCount>
 		</value>
@@ -202,7 +202,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="MultiAnalyzer"]</xpath>
+		<xpath>*/ThingDef[defName="MultiAnalyzer"]/defName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -211,7 +211,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="MultiAnalyzer"]</xpath>
+		<xpath>*/ThingDef[defName="MultiAnalyzer"]/defName</xpath>
 		<value>
 			<costStuffCount>100</costStuffCount>
 		</value>
@@ -229,7 +229,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="VitalsMonitor"]</xpath>
+		<xpath>*/ThingDef[defName="VitalsMonitor"]/defName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -238,7 +238,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="VitalsMonitor"]</xpath>
+		<xpath>*/ThingDef[defName="VitalsMonitor"]/defName</xpath>
 		<value>
 			<costStuffCount>180</costStuffCount>
 		</value>
@@ -249,7 +249,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="ToolCabinet"]</xpath>
+		<xpath>*/ThingDef[defName="ToolCabinet"]/defName</xpath>
 		<value>
 			<stuffCategories>
 				<li>Metallic</li>
@@ -258,7 +258,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="ToolCabinet"]</xpath>
+		<xpath>*/ThingDef[defName="ToolCabinet"]/defName</xpath>
 		<value>
 			<costStuffCount>200</costStuffCount>
 		</value>

@@ -8,6 +8,22 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="TubeTelevision"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="TubeTelevision"]</xpath>
+		<value>
+			<costStuffCount>100</costStuffCount>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="TubeTelevision"]/costList</xpath>
 		<value>
@@ -17,20 +33,8 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="TubeTelevision"]</xpath>
-		<value>
-			<stuffCategories>
-				<li>Metallic</li>
-			</stuffCategories>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="TubeTelevision"]</xpath>
-		<value>
-			<costStuffCount>100</costStuffCount>
-		</value>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="TubeTelevision"]/constructEffect</xpath>
 	</Operation>
 
 </Patch>

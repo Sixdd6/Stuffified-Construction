@@ -2,16 +2,6 @@
 <Patch>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[DefName="TableSculpting"]/stuffCategories</xpath>
-		<value>
-			<stuffCategories>
-				<li>Metallic</li>
-				<li>Woody</li>
-			</stuffCategories>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[DefName="TableSculpting"]/costStuffCount</xpath>
 		<value>
 			<costStuffCount>125</costStuffCount>
@@ -20,16 +10,6 @@
 
 	<Operation Class="PatchOperationRemove">
 		<xpath>*/ThingDef[DefName="TableSculpting"]/CostList</xpath>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[DefName="TableButcher"]/stuffCategories</xpath>
-		<value>
-			<stuffCategories>
-				<li>Metallic</li>
-				<li>Woody</li>
-			</stuffCategories>
-		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
@@ -90,6 +70,10 @@
 		<xpath>*/ThingDef[DefName="FueledSmithy"]/CostList</xpath>
 	</Operation>
 
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[DefName="FueledSmithy"]/constructEffect</xpath>
+	</Operation>
+
 	<Operation Class="PatchOperationInsert">
 		<xpath>*/ThingDef[DefName="ElectricSmithy"]/DefName</xpath>
 		<value>
@@ -117,7 +101,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationRemove">
-		<xpath>*/ThingDef[DefName="TableMachining"]/CostList</xpath>
+		<xpath>*/ThingDef[DefName="ElectricSmithy"]/constructEffect</xpath>
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
@@ -136,13 +120,17 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[DefName="TableMachining"]/DefName</xpath>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="TableMachining"]/CostList</xpath>
 		<value>
 			<costList>
 				<Component>5</Component>
 			</costList>
 		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[DefName="TableMachining"]/constructEffect</xpath>
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
@@ -171,6 +159,10 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="ElectricStove"]/constructEffect</xpath>
+	</Operation>
+
 	<Operation Class="PatchOperationInsert">
 		<xpath>*/ThingDef[defName="FueledStove"]/defName</xpath>
 		<value>
@@ -190,6 +182,10 @@
 
 	<Operation Class="PatchOperationRemove">
 		<xpath>*/ThingDef[defName="FueledStove"]/CostList</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="FueledStove"]/constructEffect</xpath>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
@@ -215,6 +211,32 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[DefName="Brewery"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>Metallic</li>
+				<li>Stony</li>
+				<li>Woody</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[DefName="Brewery"]</xpath>
+		<value>
+			<costStuffCount>150</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[DefName="Brewery"]/CostList</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[DefName="Brewery"]/constructEffect</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
 		<xpath>*/ThingDef[defName="FermentingBarrel"]/defName</xpath>
 		<value>
 			<stuffCategories>
@@ -237,6 +259,10 @@
 				<Steel>10</Steel>
 			</costList>
 		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="FermentingBarrel"]/constructEffect</xpath>
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
@@ -287,6 +313,10 @@
 				<Component>2</Component>
 			</costList>
 		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[DefName="ElectricSmelter"]/constructEffect</xpath>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
@@ -356,6 +386,10 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="HydroponicsBasin"]/constructEffect</xpath>
+	</Operation>
+
 	<Operation Class="PatchOperationInsert">
 		<xpath>*/ThingDef[defName="NutrientPasteDispenser"]/defName</xpath>
 		<value>
@@ -381,6 +415,10 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="NutrientPasteDispenser"]/constructEffect</xpath>
+	</Operation>
+
 	<Operation Class="PatchOperationInsert">
 		<xpath>*/ThingDef[defName="Hopper"]/defName</xpath>
 		<value>
@@ -399,6 +437,10 @@
 
 	<Operation Class="PatchOperationRemove">
 		<xpath>*/ThingDef[defName="Hopper"]/costList</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="Hopper"]/constructEffect</xpath>
 	</Operation>
 
 </Patch>
