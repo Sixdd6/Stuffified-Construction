@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName="Pegmatite"]</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/ThingDefs/ThingDef[defName="RockBase"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Cupro/Object/Structure/RockFlecked_Atlas</texPath>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+</Patch>
