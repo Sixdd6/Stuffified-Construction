@@ -23,6 +23,7 @@
 				<max>0</max>
 			</wildClusterSizeRange>
 			<sowResearchPrerequisites>
+				<li>Synthwood</li>
 			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>

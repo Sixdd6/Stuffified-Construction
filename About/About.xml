@@ -4,13 +4,8 @@
   <author>Sixdd</author>
   <url></url>
   <targetVersion>0.17.1557</targetVersion>
-  <description>At it's most basic level this mod sets most things to be constructed by stuff rather than a static cost. This translates into being able to make lamps and smithies and solar panels and all kinds of other things out of any metal you like (currently works with Cupro's Alloys for additional metal types). Also allows furniture to be made of any type of wood or similar material where appropriate (this mod adds new types of wood that you can get from the vanilla trees).
-
-Includes new carpet colors with burned variant for the new burned floors.
-
-Current compatibility for Cupro's Alloys and will add new matching wood types to Vegetable Garden trees very soon.
+  <description>At it's most basic level this mod sets most things to be constructed by stuff rather than a static cost. This translates into being able to make lamps and smithies and solar panels and all kinds of other things out of any metal you like (currently works with Cupro's Alloys for additional metal types). Also allows furniture to be made of any type of wood or similar material where appropriate (this mod adds new types of wood that you can get from the vanilla trees).\n\n Includes new carpet colors with burned variant for the new burned floors.\n\n Current compatibility for Cupro's Alloys and adds new matching wood types to Vegetable Garden trees.
 
 
-
-Mod Version: 0.17.1.1</description>
+Mod Version: 0.17.1.5</description>
 </ModMetaData>
