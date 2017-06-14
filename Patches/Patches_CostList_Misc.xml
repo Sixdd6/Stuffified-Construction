@@ -244,8 +244,12 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationRemove">
+	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="VitalsMonitor"]/costList</xpath>
+		<value>
+			<costList>
+			</costList>
+		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
@@ -264,8 +268,12 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationRemove">
+	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="ToolCabinet"]/costList</xpath>
+		<value>
+			<costList>
+			</costList>
+		</value>
 	</Operation>
 
 </Patch>

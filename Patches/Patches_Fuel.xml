@@ -180,6 +180,13 @@
 		</Operations>
 	</Operation>
 
+<!-- 	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="FueledGenerator"]/building</xpath>
+		<value>
+			<canHopperFuel>true</canHopperFuel>
+		</value>
+	</Operation> -->
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="FueledGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li</xpath>
 		<value>

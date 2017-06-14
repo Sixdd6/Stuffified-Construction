@@ -52,8 +52,8 @@
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="EXP_Copper"]</xpath>
 		</li>
-		<li Class="PatchOperationReplace">
-			<xpath>*/ThingDef[defName="EXP_Copper"]/thingCategories</xpath>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="EXP_Copper"]</xpath>
 			<value>
 				<thingCategories>
 					<li>BaseMetals</li>
@@ -68,10 +68,9 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="EXP_Lead"]</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
-		<li Class="PatchOperationReplace">
-			<xpath>*/ThingDef[defName="EXP_Lead"]/thingCategories</xpath>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="EXP_Lead"]</xpath>
 			<value>
 				<thingCategories>
 					<li>BaseMetals</li>
@@ -86,11 +85,10 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="EXP_Tin"]</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
-		<li Class="PatchOperationReplace">
+		<li Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>*/ThingDef[defName="EXP_Tin"]/thingCategories</xpath>
+			<xpath>*/ThingDef[defName="EXP_Tin"]</xpath>
 			<value>
 				<thingCategories>
 					<li>BaseMetals</li>
@@ -105,10 +103,9 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="CAL_Aluminum"]</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
-		<li Class="PatchOperationReplace">
-			<xpath>*/ThingDef[defName="CAL_Aluminum"]/thingCategories</xpath>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="CAL_Aluminum"]</xpath>
 			<value>
 				<thingCategories>
 					<li>BaseMetals</li>
@@ -123,10 +120,9 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="CAL_Plumchalcum"]</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
-		<li Class="PatchOperationReplace">
-			<xpath>*/ThingDef[defName="CAL_Plumchalcum"]/thingCategories</xpath>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="CAL_Plumchalcum"]</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
@@ -141,10 +137,9 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="CAL_Duralumin"]</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
-		<li Class="PatchOperationReplace">
-			<xpath>*/ThingDef[defName="CAL_Duralumin"]/thingCategories</xpath>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="CAL_Duralumin"]</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
@@ -159,10 +154,9 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="CAL_Bronze"]</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
-		<li Class="PatchOperationReplace">
-			<xpath>*/ThingDef[defName="CAL_Bronze"]/thingCategories</xpath>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="CAL_Bronze"]</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
@@ -177,10 +171,9 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="CAL_Hepatzion"]</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
-		<li Class="PatchOperationReplace">
-			<xpath>*/ThingDef[defName="CAL_Hepatzion"]/thingCategories</xpath>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="CAL_Hepatzion"]</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
@@ -195,10 +188,9 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="CAL_Brass"]</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
-		<li Class="PatchOperationReplace">
-			<xpath>*/ThingDef[defName="CAL_Brass"]/thingCategories</xpath>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="CAL_Brass"]</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
@@ -213,10 +205,9 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="CAL_Aurichalcum"]</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
-		<li Class="PatchOperationReplace">
-			<xpath>*/ThingDef[defName="CAL_Aurichalcum"]/thingCategories</xpath>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="CAL_Aurichalcum"]</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
@@ -231,10 +222,9 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="CAL_SterlingSilver"]</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
-		<li Class="PatchOperationReplace">
-			<xpath>*/ThingDef[defName="CAL_SterlingSilver"]/thingCategories</xpath>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="CAL_SterlingSilver"]</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
@@ -249,10 +239,9 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="CAL_RoseGold"]</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
-		<li Class="PatchOperationReplace">
-			<xpath>*/ThingDef[defName="CAL_RoseGold"]/thingCategories</xpath>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="CAL_RoseGold"]</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
@@ -267,10 +256,9 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="CAL_Electrum"]</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
-		<li Class="PatchOperationReplace">
-			<xpath>*/ThingDef[defName="CAL_Electrum"]/thingCategories</xpath>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="CAL_Electrum"]</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
@@ -285,10 +273,9 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="CAL_BlackSteel"]</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
-		<li Class="PatchOperationReplace">
-			<xpath>*/ThingDef[defName="CAL_BlackSteel"]/thingCategories</xpath>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="CAL_BlackSteel"]</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
@@ -303,15 +290,17 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="CAL_Plastin"]</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
-		<li Class="PatchOperationReplace">
-			<xpath>*/ThingDef[defName="CAL_Plastin"]/thingCategories</xpath>
+		<li Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName="CAL_Plastin"]</xpath>
 			<value>
 				<thingCategories>
 					<li>MetalAlloys</li>
 				</thingCategories>
 			</value>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>*/ThingDef/thingCategories[li="CAL_Metals"]</xpath>
 		</li>
 		</Operations>
 	</Operation>

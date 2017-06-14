@@ -25,12 +25,6 @@
 			<stuffCategories>
 				<li>Metallic</li>
 			</stuffCategories>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName="FueledGenerator"]</xpath>
-		<value>
 			<costStuffCount>100</costStuffCount>
 		</value>
 	</Operation>
@@ -54,12 +48,6 @@
 			<stuffCategories>
 				<li>Metallic</li>
 			</stuffCategories>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName="Battery"]</xpath>
-		<value>
 			<costStuffCount>50</costStuffCount>
 		</value>
 	</Operation>
@@ -83,12 +71,6 @@
 			<stuffCategories>
 				<li>Metallic</li>
 			</stuffCategories>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName="SolarGenerator"]</xpath>
-		<value>
 			<costStuffCount>100</costStuffCount>
 		</value>
 	</Operation>
@@ -112,12 +94,6 @@
 			<stuffCategories>
 				<li>Metallic</li>
 			</stuffCategories>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName="WindTurbine"]</xpath>
-		<value>
 			<costStuffCount>100</costStuffCount>
 		</value>
 	</Operation>

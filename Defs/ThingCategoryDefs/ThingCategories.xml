@@ -6,12 +6,7 @@
     <label>Root</label>
   </ThingCategoryDef>
 
-  <ThingCategoryDef>
-    <defName>Resources</defName>
-    <label>Resources</label>
-    <parent>Root</parent>
-  </ThingCategoryDef>
-
+<!-- Foods -->
     <ThingCategoryDef>
       <defName>Foods</defName>
       <label>Foods</label>
@@ -97,6 +92,13 @@
             <iconPath>Ui/Icons/ThingCategories/EggsFertilized</iconPath>
           </ThingCategoryDef>
 
+<!-- Resources -->
+  <ThingCategoryDef>
+    <defName>Resources</defName>
+    <label>Resources</label>
+    <parent>Root</parent>
+  </ThingCategoryDef>
+
     <ThingCategoryDef>
       <defName>Manufactured</defName>
       <label>Manufactured</label>
@@ -126,6 +128,7 @@
           <iconPath>Ui/Icons/ThingCategories/Medicine</iconPath>
         </ThingCategoryDef>
 
+<!-- Textiles -->
       <ThingCategoryDef>
         <defName>Textiles</defName>
         <label>Textiles</label>
@@ -160,7 +163,8 @@
           <parent>Textiles</parent>
           <iconPath>Ui/Icons/ThingCategories/SynthFabric</iconPath>
         </ThingCategoryDef>
-			
+
+<!-- ResourcesRaw -->
     <ThingCategoryDef>
       <defName>ResourcesRaw</defName>
       <label>Raw Resources</label>
@@ -210,5 +214,139 @@
         <parent>ResourcesRaw</parent>
         <iconPath>Ui/Icons/ThingCategories/RareMetalIngots</iconPath>
       </ThingCategoryDef>
+
+<!-- Items -->
+  <ThingCategoryDef>
+    <defName>Items</defName>
+    <label>items</label>
+    <parent>Root</parent>
+  </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>Art</defName>
+      <label>art</label>
+      <parent>Items</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>Furniture</defName>
+      <label>furniture</label>
+      <parent>Items</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>Unfinished</defName>
+      <label>unfinished</label>
+      <parent>Items</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>Artifacts</defName>
+      <label>artifacts</label>
+      <parent>Items</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>BodyParts</defName>
+      <label>body parts</label>
+      <parent>Items</parent>
+    </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>BodyPartsNatural</defName>
+        <label>natural</label>
+        <parent>BodyParts</parent>
+      </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>BodyPartsArtificial</defName>
+        <label>artificial</label>
+        <parent>BodyParts</parent>
+      </ThingCategoryDef>
+  
+<!-- Weapons -->
+  <ThingCategoryDef>
+    <defName>Weapons</defName>
+    <label>weapons</label>
+    <parent>Root</parent>
+  </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>WeaponsMelee</defName>
+      <label>melee weapons</label>
+      <parent>Weapons</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>WeaponsRanged</defName>
+      <label>ranged weapons</label>
+      <parent>Weapons</parent>
+    </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>Grenades</defName>
+        <label>grenades</label>
+        <parent>WeaponsRanged</parent>
+      </ThingCategoryDef>
+
+<!-- Apparel -->
+  <ThingCategoryDef>
+    <defName>Apparel</defName>
+    <label>apparel</label>
+    <parent>Root</parent>
+  </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>Headgear</defName>
+      <label>headgear</label>
+      <parent>Apparel</parent>
+    </ThingCategoryDef>
+
+<!-- Chunks -->
+  <ThingCategoryDef>
+    <defName>Chunks</defName>
+    <label>chunks</label>
+    <parent>Root</parent>
+  </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>StoneChunks</defName>
+      <label>stone chunks</label>
+      <parent>Chunks</parent>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+      <iconPath>UI/Icons/ThingCategories/StoneChunks</iconPath>
+    </ThingCategoryDef>
+
+<!-- Corpses -->
+  <ThingCategoryDef>
+    <defName>Corpses</defName>
+    <label>corpses</label>
+    <parent>Root</parent>
+  </ThingCategoryDef>
+  
+    <ThingCategoryDef>
+    <defName>CorpsesHumanlike</defName>
+    <label>humanlike corpses</label>
+      <parent>Corpses</parent>
+    </ThingCategoryDef>
+  
+    <ThingCategoryDef>
+      <defName>CorpsesAnimal</defName>
+      <label>animal corpses</label>
+      <parent>Corpses</parent>
+    </ThingCategoryDef>
+  
+      <ThingCategoryDef>
+        <defName>CorpsesInsect</defName>
+        <label>insect corpses</label>
+        <parent>CorpsesAnimal</parent>
+      </ThingCategoryDef>
+  
+    <ThingCategoryDef>
+      <defName>CorpsesMechanoid</defName>
+      <label>mechanoid corpses</label>
+      <parent>Corpses</parent>
+    </ThingCategoryDef>
+
 
 </ThingCategoryDefs>

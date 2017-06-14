@@ -26,4 +26,26 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationSequence">
+		<Success>Always</Success>
+		<Operations>
+			<li Class="PatchOperationInsert">
+				<xpath>*/ThingDef[defName="StandingLamp"]/defName</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>15</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="StandingLamp"]/costList</xpath>
+				<value>
+					<costList>
+					</costList>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
 </Patch>
