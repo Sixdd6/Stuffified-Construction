@@ -146,7 +146,6 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>/DesignationCategoryDef[defName="GardenTools"]</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationReplace">
 			<xpath>*/ThingDef[defName="HydroponicsBasin"]/designationCategory</xpath>
@@ -169,7 +168,6 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>/DesignationCategoryDef[defName="VG_Brewing"]</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationReplace">
 			<xpath>*/ThingDef[defName="FermentingBarrel"]/designationCategory</xpath>

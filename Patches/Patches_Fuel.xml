@@ -216,7 +216,6 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="VG_Biofuel"]</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationAdd">
 			<xpath>*/ThingDef[defName="FueledGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>

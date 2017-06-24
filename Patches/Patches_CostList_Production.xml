@@ -36,7 +36,6 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 				<xpath>*/ThingDef[DefName="TableLoom"]</xpath>
-				<!-- <success>Invert</success> -->
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>*/ThingDef[DefName="TableLoom"]</xpath>
@@ -70,7 +69,6 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 				<xpath>*/ThingDef[DefName="GrindStone"]</xpath>
-				<!-- <success>Invert</success> -->
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>*/ThingDef[DefName="GrindStone"]</xpath>
@@ -104,7 +102,6 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 				<xpath>*/ThingDef[DefName="CandyTable"]</xpath>
-				<!-- <success>Invert</success> -->
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>*/ThingDef[DefName="CandyTable"]</xpath>
@@ -139,7 +136,6 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 				<xpath>*/ThingDef[DefName="FueledCandyTable"]</xpath>
-				<!-- <success>Invert</success> -->
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>*/ThingDef[DefName="FueledCandyTable"]</xpath>
@@ -173,7 +169,6 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 				<xpath>*/ThingDef[DefName="Canningstove"]</xpath>
-				<!-- <success>Invert</success> -->
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>*/ThingDef[DefName="Canningstove"]</xpath>
@@ -208,7 +203,6 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 				<xpath>*/ThingDef[DefName="HandCanningstove"]</xpath>
-				<!-- <success>Invert</success> -->
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>*/ThingDef[DefName="HandCanningstove"]</xpath>
@@ -242,7 +236,6 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 				<xpath>*/ThingDef[DefName="BarrelDye"]</xpath>
-				<!-- <success>Invert</success> -->
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>*/ThingDef[DefName="BarrelDye"]/label</xpath>
@@ -283,7 +276,6 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 				<xpath>*/ThingDef[DefName="TableRugMaking"]</xpath>
-				<!-- <success>Invert</success> -->
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>*/ThingDef[DefName="TableRugMaking"]/label</xpath>
@@ -320,11 +312,10 @@
 	</Operation>
 
 	<Operation Class="PatchOperationSequence">
-		<!-- <success>Always</success> -->
+		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
 				<xpath>*/ThingDef[defName="Beehive"]</xpath>
-				<!-- <success>Invert</success> -->
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>*/ThingDef[defName="Beehive"]/label</xpath>
@@ -365,7 +356,6 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 				<xpath>*/ThingDef[DefName="ShootingRangeTarget"]</xpath>
-				<!-- <success>Invert</success> -->
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>*/ThingDef[DefName="ShootingRangeTarget"]/label</xpath>
@@ -406,7 +396,6 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 				<xpath>*/ThingDef[DefName="MartialArtsTarget"]</xpath>
-				<!-- <success>Invert</success> -->
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>*/ThingDef[DefName="MartialArtsTarget"]/label</xpath>
@@ -447,7 +436,6 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 				<xpath>*/ThingDef[DefName="SingularityAugmentation"]</xpath>
-				<!-- <success>Invert</success> -->
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>*/ThingDef[DefName="SingularityAugmentation"]/label</xpath>

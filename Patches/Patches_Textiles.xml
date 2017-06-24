@@ -45,7 +45,6 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="WoolMuffalo"]/thingCategories</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationAdd">
 			<xpath>*/ThingDef[defName="WoolMuffalo"]</xpath>
@@ -70,7 +69,6 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="WoolCamel"]/thingCategories</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationAdd">
 			<xpath>*/ThingDef[defName="WoolCamel"]</xpath>
@@ -95,7 +93,6 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="WoolAlpaca"]/thingCategories</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationAdd">
 			<xpath>*/ThingDef[defName="WoolAlpaca"]</xpath>
@@ -120,7 +117,6 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="WoolMegasloth"]/thingCategories</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationAdd">
 			<xpath>*/ThingDef[defName="WoolMegasloth"]</xpath>
@@ -170,7 +166,6 @@
 		<Operations>
 			<li Class="PatchOperationTest">
 			<xpath>*/ThingDef[defName="VG_IronwoodLog"]</xpath>
-			<!-- <success>Invert</success> -->
 		</li>
 		<li Class="PatchOperationReplace">
 			<xpath>*/ThingDef[defName="RawCotton"]/label</xpath>

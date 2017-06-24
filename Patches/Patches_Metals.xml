@@ -50,16 +50,16 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>*/ThingDef[defName="EXP_Copper"]</xpath>
-		</li>
-		<li Class="PatchOperationAdd">
-			<xpath>*/ThingDef[defName="EXP_Copper"]</xpath>
-			<value>
-				<thingCategories>
-					<li>BaseMetals</li>
-				</thingCategories>
-			</value>
-		</li>
+				<xpath>*/ThingDef[defName="EXP_Copper"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="EXP_Copper"]/thingCategories</xpath>
+				<value>
+					<thingCategories>
+						<li>BaseMetals</li>
+					</thingCategories>
+				</value>
+			</li>
 		</Operations>
 	</Operation>
 
@@ -67,16 +67,14 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>*/ThingDef[defName="EXP_Lead"]</xpath>
-		</li>
-		<li Class="PatchOperationAdd">
-			<xpath>*/ThingDef[defName="EXP_Lead"]</xpath>
-			<value>
-				<thingCategories>
+				<xpath>*/ThingDef[defName="EXP_Lead"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="EXP_Lead"]/thingCategories</xpath>
+				<value>
 					<li>BaseMetals</li>
-				</thingCategories>
-			</value>
-		</li>
+				</value>
+			</li>
 		</Operations>
 	</Operation>
 
@@ -84,17 +82,15 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>*/ThingDef[defName="EXP_Tin"]</xpath>
-		</li>
-		<li Class="PatchOperationAdd">
-			<success>Always</success>
-			<xpath>*/ThingDef[defName="EXP_Tin"]</xpath>
-			<value>
-				<thingCategories>
+				<xpath>*/ThingDef[defName="EXP_Tin"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<success>Always</success>
+				<xpath>*/ThingDef[defName="EXP_Tin"]/thingCategories</xpath>
+				<value>
 					<li>BaseMetals</li>
-				</thingCategories>
-			</value>
-		</li>
+				</value>
+			</li>
 		</Operations>
 	</Operation>
 	
@@ -102,16 +98,14 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>*/ThingDef[defName="CAL_Aluminum"]</xpath>
-		</li>
-		<li Class="PatchOperationAdd">
-			<xpath>*/ThingDef[defName="CAL_Aluminum"]</xpath>
-			<value>
-				<thingCategories>
+				<xpath>*/ThingDef[defName="CAL_Aluminum"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="CAL_Aluminum"]/thingCategories</xpath>
+				<value>
 					<li>BaseMetals</li>
-				</thingCategories>
-			</value>
-		</li>
+				</value>
+			</li>
 		</Operations>
 	</Operation>
 
@@ -119,16 +113,14 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>*/ThingDef[defName="CAL_Plumchalcum"]</xpath>
-		</li>
-		<li Class="PatchOperationAdd">
-			<xpath>*/ThingDef[defName="CAL_Plumchalcum"]</xpath>
-			<value>
-				<thingCategories>
+				<xpath>*/ThingDef[defName="CAL_Plumchalcum"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="CAL_Plumchalcum"]/thingCategories</xpath>
+				<value>
 					<li>MetalAlloys</li>
-				</thingCategories>
-			</value>
-		</li>
+				</value>
+			</li>
 		</Operations>
 	</Operation>
 
@@ -136,16 +128,14 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>*/ThingDef[defName="CAL_Duralumin"]</xpath>
-		</li>
-		<li Class="PatchOperationAdd">
-			<xpath>*/ThingDef[defName="CAL_Duralumin"]</xpath>
-			<value>
-				<thingCategories>
+				<xpath>*/ThingDef[defName="CAL_Duralumin"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="CAL_Duralumin"]/thingCategories</xpath>
+				<value>
 					<li>MetalAlloys</li>
-				</thingCategories>
-			</value>
-		</li>
+				</value>
+			</li>
 		</Operations>
 	</Operation>
 
@@ -153,16 +143,14 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>*/ThingDef[defName="CAL_Bronze"]</xpath>
-		</li>
-		<li Class="PatchOperationAdd">
-			<xpath>*/ThingDef[defName="CAL_Bronze"]</xpath>
-			<value>
-				<thingCategories>
+				<xpath>*/ThingDef[defName="CAL_Bronze"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="CAL_Bronze"]/thingCategories</xpath>
+				<value>
 					<li>MetalAlloys</li>
-				</thingCategories>
-			</value>
-		</li>
+				</value>
+			</li>
 		</Operations>
 	</Operation>
 
@@ -170,16 +158,14 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>*/ThingDef[defName="CAL_Hepatzion"]</xpath>
-		</li>
-		<li Class="PatchOperationAdd">
-			<xpath>*/ThingDef[defName="CAL_Hepatzion"]</xpath>
-			<value>
-				<thingCategories>
+				<xpath>*/ThingDef[defName="CAL_Hepatzion"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="CAL_Hepatzion"]/thingCategories</xpath>
+				<value>
 					<li>MetalAlloys</li>
-				</thingCategories>
-			</value>
-		</li>
+				</value>
+			</li>
 		</Operations>
 	</Operation>
 
@@ -187,16 +173,14 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>*/ThingDef[defName="CAL_Brass"]</xpath>
-		</li>
-		<li Class="PatchOperationAdd">
-			<xpath>*/ThingDef[defName="CAL_Brass"]</xpath>
-			<value>
-				<thingCategories>
+				<xpath>*/ThingDef[defName="CAL_Brass"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="CAL_Brass"]/thingCategories</xpath>
+				<value>
 					<li>MetalAlloys</li>
-				</thingCategories>
-			</value>
-		</li>
+				</value>
+			</li>
 		</Operations>
 	</Operation>
 
@@ -204,16 +188,14 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>*/ThingDef[defName="CAL_Aurichalcum"]</xpath>
-		</li>
-		<li Class="PatchOperationAdd">
-			<xpath>*/ThingDef[defName="CAL_Aurichalcum"]</xpath>
-			<value>
-				<thingCategories>
+				<xpath>*/ThingDef[defName="CAL_Aurichalcum"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="CAL_Aurichalcum"]/thingCategories</xpath>
+				<value>
 					<li>MetalAlloys</li>
-				</thingCategories>
-			</value>
-		</li>
+				</value>
+			</li>
 		</Operations>
 	</Operation>
 
@@ -221,16 +203,14 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>*/ThingDef[defName="CAL_SterlingSilver"]</xpath>
-		</li>
-		<li Class="PatchOperationAdd">
-			<xpath>*/ThingDef[defName="CAL_SterlingSilver"]</xpath>
-			<value>
-				<thingCategories>
+				<xpath>*/ThingDef[defName="CAL_SterlingSilver"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="CAL_SterlingSilver"]/thingCategories</xpath>
+				<value>
 					<li>MetalAlloys</li>
-				</thingCategories>
-			</value>
-		</li>
+				</value>
+			</li>
 		</Operations>
 	</Operation>
 
@@ -241,11 +221,9 @@
 			<xpath>*/ThingDef[defName="CAL_RoseGold"]</xpath>
 		</li>
 		<li Class="PatchOperationAdd">
-			<xpath>*/ThingDef[defName="CAL_RoseGold"]</xpath>
+			<xpath>*/ThingDef[defName="CAL_RoseGold"]/thingCategories</xpath>
 			<value>
-				<thingCategories>
-					<li>MetalAlloys</li>
-				</thingCategories>
+				<li>MetalAlloys</li>
 			</value>
 		</li>
 		</Operations>
@@ -255,16 +233,14 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>*/ThingDef[defName="CAL_Electrum"]</xpath>
-		</li>
-		<li Class="PatchOperationAdd">
-			<xpath>*/ThingDef[defName="CAL_Electrum"]</xpath>
-			<value>
-				<thingCategories>
+				<xpath>*/ThingDef[defName="CAL_Electrum"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="CAL_Electrum"]/thingCategories</xpath>
+				<value>
 					<li>MetalAlloys</li>
-				</thingCategories>
-			</value>
-		</li>
+				</value>
+			</li>
 		</Operations>
 	</Operation>
 
@@ -272,16 +248,14 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>*/ThingDef[defName="CAL_BlackSteel"]</xpath>
-		</li>
-		<li Class="PatchOperationAdd">
-			<xpath>*/ThingDef[defName="CAL_BlackSteel"]</xpath>
-			<value>
-				<thingCategories>
+				<xpath>*/ThingDef[defName="CAL_BlackSteel"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="CAL_BlackSteel"]/thingCategories</xpath>
+				<value>
 					<li>MetalAlloys</li>
-				</thingCategories>
-			</value>
-		</li>
+				</value>
+			</li>
 		</Operations>
 	</Operation>
 
@@ -289,20 +263,19 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-			<xpath>*/ThingDef[defName="CAL_Plastin"]</xpath>
-		</li>
-		<li Class="PatchOperationAdd">
-			<xpath>*/ThingDef[defName="CAL_Plastin"]</xpath>
-			<value>
-				<thingCategories>
+				<xpath>*/ThingDef[defName="CAL_Plastin"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="CAL_Plastin"]/thingCategories</xpath>
+				<value>
 					<li>MetalAlloys</li>
-				</thingCategories>
-			</value>
-		</li>
-		<li Class="PatchOperationRemove">
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
 			<xpath>*/ThingDef/thingCategories[li="CAL_Metals"]</xpath>
-		</li>
-		</Operations>
 	</Operation>
 
 </Patch>
