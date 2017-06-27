@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="CompostBin"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName="CompostBin"]/CostList/WoodLog</xpath>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="CompostBin"]</xpath>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>*/ThingDef[defName="CompostBin"]/defName</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>4</costStuffCount>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+</Patch>

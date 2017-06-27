@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="Gun_Arquebus"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName="Gun_Arquebus"]/costList/WoodLog</xpath>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="Gun_BreechLoader"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName="Gun_BreechLoader"]/costList/WoodLog</xpath>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="Gun_Revolver"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName="Gun_Revolver"]/costList/WoodLog</xpath>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="Gun_PumpShotgun"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName="Gun_PumpShotgun"]/costList/WoodLog</xpath>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="Gun_Repeater"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName="Gun_Repeater"]/costList/WoodLog</xpath>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="Gun_BoltActionRifle"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName="Gun_BoltActionRifle"]/costList/WoodLog</xpath>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="Gun_SniperRifle"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName="Gun_SniperRifle"]/costList/WoodLog</xpath>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="Gun_Pistol"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName="Gun_Pistol"]/costList/WoodLog</xpath>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="Gun_SLR"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName="Gun_SLR"]/costList/WoodLog</xpath>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="Gun_GrenadeLauncher"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName="Gun_GrenadeLauncher"]/costList/WoodLog</xpath>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="Gun_IncendiaryLauncher"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName="Gun_IncendiaryLauncher"]/costList/WoodLog</xpath>
+			</li>
+		</Operations>
+	</Operation>
+
+</Patch>
