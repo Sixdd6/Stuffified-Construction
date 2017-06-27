@@ -96,16 +96,17 @@
 		<products>
 			<Wire>25</Wire>
 		</products>
-		<recipeUsers>
-			<li>FueledSmithy</li>
-			<li>ElectricSmithy</li>
-		</recipeUsers>
 		<fixedIngredientFilter>
 			<categories>
 				<li>BaseMetals</li>
 				<li>MetalAlloys</li>
 			</categories>
 		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>Anvil</li>
+			<li>FueledSmithy</li>
+			<li>ElectricSmithy</li>
+		</recipeUsers>
 	</RecipeDef>
 
   <!-- =========== Flooring Recipes =========== -->
