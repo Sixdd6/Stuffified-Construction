@@ -18,7 +18,9 @@
 			<li>
 				<filter>
 					<categories>
-						<li>Textiles</li>
+						<li>PlantFabric</li>
+						<li>AnimalHair</li>
+						<li>Leathers</li>
 					</categories>
 				</filter>
 				<count>25</count>
@@ -86,8 +88,7 @@
 			<li>
 				<filter>
 					<categories>
-						<li>BaseMetals</li>
-						<li>MetalAlloys</li>
+						<li>Metals</li>
 					</categories>
 				</filter>
 				<count>25</count>
@@ -98,8 +99,7 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>BaseMetals</li>
-				<li>MetalAlloys</li>
+				<li>Metals</li>
 			</categories>
 		</fixedIngredientFilter>
 		<recipeUsers>
