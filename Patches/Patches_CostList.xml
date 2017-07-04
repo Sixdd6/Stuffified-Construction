@@ -61,17 +61,11 @@
 			<stuffCategories>
 				<li>Woody</li>
 			</stuffCategories>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="Campfire"]</xpath>
-		<value>
 			<costStuffCount>20</costStuffCount>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
+<!-- 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="Campfire"]/costList</xpath>
 		<value>
 			<costList>
@@ -81,9 +75,9 @@
 
 	<Operation Class="PatchOperationRemove">
 		<xpath>*/ThingDef[defName="Campfire"]/constructEffect</xpath>
-	</Operation>
+	</Operation> -->
 
-	<Operation Class="PatchOperationInsert">
+<!-- 	<Operation Class="PatchOperationInsert">
 		<xpath>*/ThingDef[defName="PassiveCooler"]/defName</xpath>
 		<value>
 			<stuffCategories>
@@ -91,19 +85,18 @@
 			</stuffCategories>
 			<costStuffCount>20</costStuffCount>
 		</value>
-	</Operation>
+	</Operation> -->
 
-	<Operation Class="PatchOperationReplace">
+<!-- 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="PassiveCooler"]/costList</xpath>
 		<value>
-			<costList>
-			</costList>
+			<costList></costList>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationRemove">
 		<xpath>*/ThingDef[defName="PassiveCooler"]/constructEffect</xpath>
-	</Operation>
+	</Operation> -->
 
 	<Operation Class="PatchOperationInsert">
 		<xpath>*/ThingDef[defName="Heater"]/defName</xpath>

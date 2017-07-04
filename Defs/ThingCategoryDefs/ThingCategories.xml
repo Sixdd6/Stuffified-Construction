@@ -198,12 +198,12 @@
         <defName>Metals</defName>
         <label>Metals</label>
         <parent>ResourcesRaw</parent>
-        <iconPath>Ui/Icons/ThingCategories/RareMetalIngots</iconPath>
+        <iconPath>Ui/Icons/ThingCategories/MetalIngots</iconPath>
       </ThingCategoryDef>
 
       <ThingCategoryDef>
         <defName>PreciousMetals</defName>
-        <label>Metals</label>
+        <label>Precious Metals</label>
         <parent>ResourcesRaw</parent>
         <iconPath>Ui/Icons/ThingCategories/RareMetalIngots</iconPath>
       </ThingCategoryDef>
