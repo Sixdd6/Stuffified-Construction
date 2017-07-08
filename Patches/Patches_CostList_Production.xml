@@ -913,4 +913,27 @@
 		<xpath>*/ThingDef[defName="Hopper"]/constructEffect</xpath>
 	</Operation>
 
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingCategoryDef[defName="CAL_Metals"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<order>Append</order>
+				<xpath>*/RecipeDef[defName="SpinWire"]/ingredients/li[1]/filter/categories</xpath>
+				<value>
+					<li>CAL_Metals</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<order>Append</order>
+				<xpath>*/RecipeDef[defName="SpinWire"]/fixedIngredientFilter/categories</xpath>
+				<value>
+					<li>CAL_Metals</li>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
 </Patch>
