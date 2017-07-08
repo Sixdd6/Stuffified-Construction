@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[DefName="TableAnimalProsthetics"]/CostList</xpath>
+				<value>
+					<CostList>
+						<Steel>80</Steel>
+					</CostList>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<order>Append</order>
+				<xpath>*/ThingDef[DefName="TableAnimalProsthetics"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>50</costStuffCount>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeProstheticTailAnimal"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeProstheticTailAnimal"]/ingredients/li[2]/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>WoodLogs</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeProstheticTailAnimal"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+						<li>WoodLogs</li>
+					</categories>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeSimpleProstheticLegAnimal"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeSimpleProstheticLegAnimal"]/ingredients/li[2]/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>WoodLogs</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeSimpleProstheticLegAnimal"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+						<li>WoodLogs</li>
+					</categories>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeBionicLegAnimal"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeBionicLegAnimal"]/ingredients/li[2]/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>WoodLogs</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeBionicLegAnimal"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+						<li>WoodLogs</li>
+					</categories>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeSimpleProstheticArmAnimal"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeSimpleProstheticArmAnimal"]/ingredients/li[2]/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>WoodLogs</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeSimpleProstheticArmAnimal"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+						<li>WoodLogs</li>
+					</categories>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeBionicArmAnimal"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeBionicArmAnimal"]/ingredients/li[2]/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>WoodLogs</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeBionicArmAnimal"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+						<li>WoodLogs</li>
+					</categories>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeNoseAnimalSimple"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeNoseAnimalSimple"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeBionicEyeAnimal"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeBionicEyeAnimal"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeEarAnimalSimple"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeEarAnimalSimple"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeEarAnimalBionic"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeEarAnimalBionic"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeJawAnimalSimple"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeJawAnimalSimple"]/ingredients/li[2]/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>WoodLogs</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeJawAnimalSimple"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+						<li>WoodLogs</li>
+					</categories>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeJawAnimalBionic"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeJawAnimalBionic"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeSpineAnimalSimple"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeSpineAnimalSimple"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeSpineAnimalBionic"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeSpineAnimalBionic"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeBionicAnimalHeart"]/ingredients/li[3]/filter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>Synthread</li>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeBionicAnimalHeart"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>Steel</li>
+						<li>Plasteel</li>
+						<li>Synthread</li>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeBionicAnimalLung"]/ingredients/li[3]/filter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>Synthread</li>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeBionicAnimalLung"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>Steel</li>
+						<li>Plasteel</li>
+						<li>Synthread</li>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeBionicAnimalLiver"]/ingredients/li[3]/filter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>Synthread</li>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeBionicAnimalLiver"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>Steel</li>
+						<li>Plasteel</li>
+						<li>Synthread</li>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeBionicAnimalKidney"]/ingredients/li[3]/filter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>Synthread</li>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeBionicAnimalKidney"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>Steel</li>
+						<li>Plasteel</li>
+						<li>Synthread</li>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeBionicAnimalStomach"]/ingredients/li[3]/filter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>Synthread</li>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName="MakeBionicAnimalStomach"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>Steel</li>
+						<li>Plasteel</li>
+						<li>Synthread</li>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+</Patch>

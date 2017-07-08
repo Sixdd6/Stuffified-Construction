@@ -164,13 +164,6 @@
 			</value>
 		</li>
 		<li Class="PatchOperationAdd">
-			<xpath>*/ThingDef[defName="FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
-			<order>Append</order>
-			<value>
-				<li>Bamboo</li>
-			</value>
-		</li>
-		<li Class="PatchOperationAdd">
 			<xpath>*/ThingDef[defName="TorchLamp"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 			<order>Append</order>
 			<value>
@@ -179,13 +172,6 @@
 		</li>
 		</Operations>
 	</Operation>
-
-<!-- 	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName="FueledGenerator"]/building</xpath>
-		<value>
-			<canHopperFuel>true</canHopperFuel>
-		</value>
-	</Operation> -->
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="FueledGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li</xpath>

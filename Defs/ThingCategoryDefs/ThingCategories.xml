@@ -205,7 +205,7 @@
         <defName>PreciousMetals</defName>
         <label>Precious Metals</label>
         <parent>ResourcesRaw</parent>
-        <iconPath>Ui/Icons/ThingCategories/RareMetalIngots</iconPath>
+        <iconPath>Ui/Icons/ThingCategories/MetalIngots</iconPath>
       </ThingCategoryDef>
 
 <!-- Items -->

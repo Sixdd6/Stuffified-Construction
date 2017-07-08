@@ -916,9 +916,6 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<Operations>
-			<li Class="PatchOperationTest">
-				<xpath>*/ThingCategoryDef[defName="CAL_Metals"]</xpath>
-			</li>
 			<li Class="PatchOperationAdd">
 				<order>Append</order>
 				<xpath>*/RecipeDef[defName="SpinWire"]/ingredients/li[1]/filter/categories</xpath>

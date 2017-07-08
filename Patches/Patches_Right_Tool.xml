@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Pickaxe -->
+	<Operation Class="PatchOperationSequence">
+		<Operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/RecipeDef[defName="MakePickaxe"]/ingredients/li[1]/filter/ThingDefs</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/RecipeDef[defName="MakePickaxe"]/ingredients/li[2]/filter/ThingDefs</xpath>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<Operations>
+			<li Class="PatchOperationAdd">
+				<order>Append</order>
+				<xpath>*/RecipeDef[defName="MakePickaxe"]/ingredients/li[1]/filter</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<order>Append</order>
+				<xpath>*/RecipeDef[defName="MakePickaxe"]/ingredients/li[2]/filter</xpath>
+				<value>
+					<categories>
+						<li>WoodLogs</li>
+					</categories>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<Operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/RecipeDef[defName="MakePickaxe"]/fixedIngredientFilter/ThingDefs</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<order>Append</order>
+				<xpath>*/RecipeDef[defName="MakePickaxe"]/fixedIngredientFilter</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+						<li>WoodLogs</li>
+					</categories>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+<!-- HandAxe -->
+	<Operation Class="PatchOperationSequence">
+		<Operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/RecipeDef[defName="MakeHandaxe"]/ingredients/li[1]/filter/ThingDefs</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/RecipeDef[defName="MakeHandaxe"]/ingredients/li[2]/filter/ThingDefs</xpath>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<Operations>
+			<li Class="PatchOperationAdd">
+				<order>Append</order>
+				<xpath>*/RecipeDef[defName="MakeHandaxe"]/ingredients/li[1]/filter</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<order>Append</order>
+				<xpath>*/RecipeDef[defName="MakeHandaxe"]/ingredients/li[2]/filter</xpath>
+				<value>
+					<categories>
+						<li>WoodLogs</li>
+					</categories>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<Operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/RecipeDef[defName="MakeHandaxe"]/fixedIngredientFilter/ThingDefs</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<order>Append</order>
+				<xpath>*/RecipeDef[defName="MakeHandaxe"]/fixedIngredientFilter</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+						<li>WoodLogs</li>
+					</categories>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+<!-- Hammer -->
+	<Operation Class="PatchOperationSequence">
+		<Operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/RecipeDef[defName="MakeHammer"]/ingredients/li[1]/filter/ThingDefs</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/RecipeDef[defName="MakeHammer"]/ingredients/li[2]/filter/ThingDefs</xpath>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<Operations>
+			<li Class="PatchOperationAdd">
+				<order>Append</order>
+				<xpath>*/RecipeDef[defName="MakeHammer"]/ingredients/li[1]/filter</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<order>Append</order>
+				<xpath>*/RecipeDef[defName="MakeHammer"]/ingredients/li[2]/filter</xpath>
+				<value>
+					<categories>
+						<li>WoodLogs</li>
+					</categories>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<Operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/RecipeDef[defName="MakeHammer"]/fixedIngredientFilter/ThingDefs</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<order>Append</order>
+				<xpath>*/RecipeDef[defName="MakeHammer"]/fixedIngredientFilter</xpath>
+				<value>
+					<categories>
+						<li>Metals</li>
+						<li>WoodLogs</li>
+					</categories>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+</Patch>
