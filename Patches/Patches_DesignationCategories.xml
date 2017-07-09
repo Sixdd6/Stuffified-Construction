@@ -86,4 +86,19 @@
 		</Operations>
 	</Operation>
 
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>*/ThingDef[defName="RTFTJToolBench"]</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="RTFTJToolBench"]/DesignationCategory</xpath>
+				<value>
+					<DesignationCategory>Production2</DesignationCategory>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
 </Patch>
