@@ -40,21 +40,13 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<Operations>
-			<li Class="PatchOperationTest">
-			<xpath>*/ThingDef[defName="WoolMuffalo"]/thingCategories</xpath>
-		</li>
-		<li Class="PatchOperationAdd">
-			<xpath>*/ThingDef[defName="WoolMuffalo"]</xpath>
-			<value>
-				<thingCategories>
-					<li>AnimalHair</li>
-				</thingCategories>
-			</value>
-		</li>
-		</Operations>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="WoolMuffalo"]</xpath>
+		<value>
+			<thingCategories>
+				<li>AnimalHair</li>
+			</thingCategories>
+		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
@@ -64,21 +56,13 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<Operations>
-			<li Class="PatchOperationTest">
-			<xpath>*/ThingDef[defName="WoolCamel"]/thingCategories</xpath>
-		</li>
-		<li Class="PatchOperationAdd">
-			<xpath>*/ThingDef[defName="WoolCamel"]</xpath>
-			<value>
-				<thingCategories>
-					<li>AnimalHair</li>
-				</thingCategories>
-			</value>
-		</li>
-		</Operations>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="WoolCamel"]</xpath>
+		<value>
+			<thingCategories>
+				<li>AnimalHair</li>
+			</thingCategories>
+		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
@@ -88,21 +72,13 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<Operations>
-			<li Class="PatchOperationTest">
-			<xpath>*/ThingDef[defName="WoolAlpaca"]/thingCategories</xpath>
-		</li>
-		<li Class="PatchOperationAdd">
-			<xpath>*/ThingDef[defName="WoolAlpaca"]</xpath>
-			<value>
-				<thingCategories>
-					<li>AnimalHair</li>
-				</thingCategories>
-			</value>
-		</li>
-		</Operations>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="WoolAlpaca"]</xpath>
+		<value>
+			<thingCategories>
+				<li>AnimalHair</li>
+			</thingCategories>
+		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
@@ -112,21 +88,13 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<Operations>
-			<li Class="PatchOperationTest">
-			<xpath>*/ThingDef[defName="WoolMegasloth"]/thingCategories</xpath>
-		</li>
-		<li Class="PatchOperationAdd">
-			<xpath>*/ThingDef[defName="WoolMegasloth"]</xpath>
-			<value>
-				<thingCategories>
-					<li>AnimalHair</li>
-				</thingCategories>
-			</value>
-		</li>
-		</Operations>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="WoolMegasloth"]</xpath>
+		<value>
+			<thingCategories>
+				<li>AnimalHair</li>
+			</thingCategories>
+		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">

@@ -3,6 +3,7 @@
 
 <!-- Pickaxe -->
 	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationRemove">
 				<xpath>*/RecipeDef[defName="MakePickaxe"]/ingredients/li[1]/filter/ThingDefs</xpath>
@@ -14,6 +15,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationAdd">
 				<order>Append</order>
@@ -37,6 +39,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationRemove">
 				<xpath>*/RecipeDef[defName="MakePickaxe"]/fixedIngredientFilter/ThingDefs</xpath>
@@ -56,6 +59,7 @@
 
 <!-- HandAxe -->
 	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationRemove">
 				<xpath>*/RecipeDef[defName="MakeHandaxe"]/ingredients/li[1]/filter/ThingDefs</xpath>
@@ -67,6 +71,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationAdd">
 				<order>Append</order>
@@ -90,6 +95,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationRemove">
 				<xpath>*/RecipeDef[defName="MakeHandaxe"]/fixedIngredientFilter/ThingDefs</xpath>
@@ -109,6 +115,7 @@
 
 <!-- Hammer -->
 	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationRemove">
 				<xpath>*/RecipeDef[defName="MakeHammer"]/ingredients/li[1]/filter/ThingDefs</xpath>
@@ -120,6 +127,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationAdd">
 				<order>Append</order>
@@ -143,6 +151,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationRemove">
 				<xpath>*/RecipeDef[defName="MakeHammer"]/fixedIngredientFilter/ThingDefs</xpath>
