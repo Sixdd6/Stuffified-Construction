@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- 	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationAdd">
+				<order>Append</order>
+				<xpath>*/RecipeDef[defName="SpinWire"]/ingredients/li[1]/filter/categories</xpath>
+				<value>
+					<li>CAL_Metals</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<order>Append</order>
+				<xpath>*/RecipeDef[defName="SpinWire"]/fixedIngredientFilter/categories</xpath>
+				<value>
+					<li>CAL_Metals</li>
+				</value>
+			</li>
+		</Operations>
+	</Operation> -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="EXP_Copper"]/thingCategories</xpath>
+				<value>
+					<li>Metals</li>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName="EXP_Copper"]/thingCategories[li="CAL_Metals"]</xpath>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="EXP_Lead"]/thingCategories</xpath>
+				<value>
+					<li>Metals</li>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName="EXP_Lead"]/thingCategories[li="CAL_Metals"]</xpath>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationAdd">
+				<success>Always</success>
+				<xpath>*/ThingDef[defName="EXP_Tin"]/thingCategories</xpath>
+				<value>
+					<li>Metals</li>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName="EXP_Tin"]/thingCategories[li="CAL_Metals"]</xpath>
+			</li>
+		</Operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="CAL_Aluminum"]/thingCategories</xpath>
+				<value>
+					<li>Metals</li>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName="CAL_Aluminum"]/thingCategories[li="CAL_Metals"]</xpath>
+			</li>
+		</Operations>
+	</Operation>
+
+</Patch>

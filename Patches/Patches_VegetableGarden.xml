@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>*/ThingDef[defName="PlantTreeWeepingWillow"]/plant</xpath>
+		<value>
+			<harvestedThingDef>WoodWillow</harvestedThingDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>*/ThingDef[defName="PlantTreeJapaneseMaple"]/plant</xpath>
+		<value>
+			<harvestedThingDef>WoodMaple</harvestedThingDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>*/ThingDef[defName="PlantTreeCherryBlossom"]/plant</xpath>
+		<value>
+			<harvestedThingDef>WoodCherry</harvestedThingDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>*/ThingDef[defName="PlantTreeCamellia"]/plant</xpath>
+		<value>
+			<harvestedThingDef>WoodCamellia</harvestedThingDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>*/ThingDef[defName="PlantTreeAcacia"]/plant</xpath>
+		<value>
+			<harvestedThingDef>WoodAcacia</harvestedThingDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>*/ThingDef[defName="PlantTreePalm"]/plant</xpath>
+		<value>
+			<harvestedThingDef>WoodPalm</harvestedThingDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>*/ThingDef[defName="PlantTreeRedMaple"]/plant</xpath>
+		<value>
+			<harvestedThingDef>WoodMaple</harvestedThingDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>*/ThingDef[defName="Bamboo"]/thingCategories</xpath>
+		<value>
+			<thingCategories>
+				<li>WoodLogs</li>
+			</thingCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[DefName="TableLoom"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName="TableLoom"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName="TableLoom"]</xpath>
+				<value>
+					<costStuffCount>90</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[DefName="TableLoom"]/CostList</xpath>
+					<value>
+						<CostList>
+						</CostList>
+					</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[DefName="TableLoom"]/constructEffect</xpath>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[DefName="GrindStone"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName="GrindStone"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Stony</li>
+					</stuffCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName="GrindStone"]</xpath>
+				<value>
+					<costStuffCount>40</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[DefName="GrindStone"]/CostList</xpath>
+					<value>
+						<CostList>
+						</CostList>
+					</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[DefName="GrindStone"]/constructEffect</xpath>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[DefName="CandyTable"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName="CandyTable"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName="CandyTable"]</xpath>
+				<value>
+					<costStuffCount>60</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[DefName="CandyTable"]/CostList</xpath>
+				<value>
+					<CostList>
+						<Component>1</Component>
+					</CostList>
+				</value>
+			</li>
+			<!-- <li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[DefName="CandyTable"]/constructEffect</xpath>
+			</li> -->
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[DefName="FueledCandyTable"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName="FueledCandyTable"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName="FueledCandyTable"]</xpath>
+				<value>
+					<costStuffCount>60</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[DefName="FueledCandyTable"]/CostList</xpath>
+					<value>
+						<CostList>
+						</CostList>
+					</value>
+			</li>
+			<!-- <li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[DefName="FueledCandyTable"]/constructEffect</xpath>
+			</li> -->
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[DefName="Canningstove"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName="Canningstove"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName="Canningstove"]</xpath>
+				<value>
+					<costStuffCount>40</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[DefName="Canningstove"]/CostList</xpath>
+				<value>
+					<CostList>
+						<Component>1</Component>
+					</CostList>
+				</value>
+			</li>
+			<!-- <li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[DefName="Canningstove"]/constructEffect</xpath>
+			</li> -->
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[DefName="HandCanningstove"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName="HandCanningstove"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName="HandCanningstove"]</xpath>
+				<value>
+					<costStuffCount>40</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[DefName="HandCanningstove"]/CostList</xpath>
+					<value>
+						<CostList>
+						</CostList>
+					</value>
+			</li>
+			<!-- <li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[DefName="HandCanningstove"]/constructEffect</xpath>
+			</li> -->
+		</Operations>
+	</Operation>
+
+</Patch>
