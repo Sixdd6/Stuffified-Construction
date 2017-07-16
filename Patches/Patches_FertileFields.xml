@@ -4,9 +4,6 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<Operations>
-			<li Class="PatchOperationTest">
-				<xpath>*/ThingDef[defName="CompostBin"]</xpath>
-			</li>
 			<li Class="PatchOperationRemove">
 				<xpath>*/ThingDef[defName="CompostBin"]/CostList/WoodLog</xpath>
 			</li>
@@ -16,11 +13,8 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<Operations>
-			<li Class="PatchOperationTest">
+			<li Class="PatchOperationAdd">
 				<xpath>*/ThingDef[defName="CompostBin"]</xpath>
-			</li>
-			<li Class="PatchOperationInsert">
-				<xpath>*/ThingDef[defName="CompostBin"]/defName</xpath>
 				<value>
 					<stuffCategories>
 						<li>Woody</li>

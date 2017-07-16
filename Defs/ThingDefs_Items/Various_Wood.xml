@@ -6,7 +6,7 @@
   <ThingDef ParentName="ResourceVerbBase" Name="WoodLog">
     <defName>WoodLog</defName>
     <label>Synthwood Logs</label>
-    <description>A log of synthwood. Synthwood comes from a tree which was genetically designed to produce usable wood quickly at a low cost.</description>
+    <description>A log of synthwood. Synthwood comes from a tree which was genetically designed to produce quality wood quickly. Makes pretty and durable floors and walls.</description>
     <graphicData>
       <texPath>Things/Item/Resource/WoodLogWhite</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -17,7 +17,7 @@
     <soundDrop>Wood_Drop</soundDrop>
     <statBases>
       <MarketValue>1.4</MarketValue>
-      <MaxHitPoints>150</MaxHitPoints>
+      <MaxHitPoints>300</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>2</DeteriorationRate>
       <MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
@@ -37,14 +37,14 @@
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statOffsets>
-        <Beauty>0</Beauty>
+        <Beauty>4</Beauty>
       </statOffsets>
       <statFactors>
-        <MaxHitPoints>0.5</MaxHitPoints>
-        <Beauty>1.25</Beauty>
-        <Flammability>1</Flammability>
+        <MaxHitPoints>1.0</MaxHitPoints>
+        <Beauty>2</Beauty>
+        <Flammability>0.5</Flammability>
         <WorkToMake>0.7</WorkToMake>
-        <DoorOpenSpeed>1.2</DoorOpenSpeed>
+        <DoorOpenSpeed>0.5</DoorOpenSpeed>
         <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
       </statFactors>
     </stuffProps>
@@ -314,7 +314,7 @@
     <label>Maple Logs</label>
     <description>Cut logs of Maple.</description>
     <graphicData>
-      <color>(93,58,45)</color>
+      <color>(152,69,39)</color>
     </graphicData>
     <statBases>
       <MarketValue>15</MarketValue>
@@ -323,7 +323,7 @@
     </statBases>
     <stuffProps>
       <stuffAdjective>maple</stuffAdjective>
-      <color>(93,58,45)</color>
+      <color>(152,69,39)</color>
       <statOffsets>
         <Beauty>12</Beauty>
       </statOffsets>
@@ -376,7 +376,7 @@
     <label>Cherry Logs</label>
     <description>Cut logs of Cherry wood.</description>
     <graphicData>
-      <color>(147,45,34)</color>
+      <color>(134,28,35)</color>
     </graphicData>
     <statBases>
       <MarketValue>1.7</MarketValue>
@@ -391,7 +391,7 @@
     <stuffProps>
       <commonality>0.75</commonality>
       <stuffAdjective>cherry</stuffAdjective>
-      <color>(147,45,34)</color>
+      <color>(134,28,35)</color>
       <statFactors>
         <MaxHitPoints>0.75</MaxHitPoints>
         <Beauty>4</Beauty>

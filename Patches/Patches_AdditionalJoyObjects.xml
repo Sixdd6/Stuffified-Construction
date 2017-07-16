@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<Success>Always</Success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="AJO_CardTable"]</xpath>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>*/ThingDef[defName="AJO_CardTable"]/defName</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>100</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="AJO_CardTable"]/costList</xpath>
+				<value>
+					<costList>
+						<Cloth>10</Cloth>
+					</costList>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<Success>Always</Success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="AJO_Dartboard"]</xpath>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>*/ThingDef[defName="AJO_Dartboard"]/defName</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>15</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="AJO_Dartboard"]/costList</xpath>
+				<value>
+					<costList>
+						<Steel>5</Steel>
+						<Cloth>5</Cloth>
+					</costList>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<Success>Always</Success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="AJO_Easel"]</xpath>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>*/ThingDef[defName="AJO_Easel"]/defName</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>15</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="AJO_Easel"]/costList</xpath>
+				<value>
+					<costList>
+					</costList>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<Success>Always</Success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="AJO_BookRack"]</xpath>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>*/ThingDef[defName="AJO_BookRack"]/defName</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="AJO_BookRack"]/costList</xpath>
+				<value>
+					<costList>
+						<AJO_PileOfBooks>1</AJO_PileOfBooks>
+					</costList>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<Success>Always</Success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="AJO_Bookshelf"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="AJO_Bookshelf"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>60</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="AJO_Bookshelf"]/costList</xpath>
+				<value>
+					<costList>
+						<AJO_PileOfBooks>3</AJO_PileOfBooks>
+					</costList>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<Success>Always</Success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="AJO_Bookcase"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="AJO_Bookcase"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>100</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="AJO_Bookcase"]/costList</xpath>
+				<value>
+					<costList>
+						<AJO_PileOfBooks>5</AJO_PileOfBooks>
+					</costList>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+</Patch>

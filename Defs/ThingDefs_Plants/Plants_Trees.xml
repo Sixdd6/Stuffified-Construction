@@ -31,7 +31,7 @@
 	<ThingDef ParentName="TreeBase">
 		<defName>PlantTreeOak</defName>
 		<label>Oak Tree</label>
-		<description>A strong hardwood tree. Slow-going, but its wood is very strong.</description>
+		<description>A strong hardwood tree. Slow-growing, but its wood is very strong.</description>
 		<graphicData>
 			<texPath>Things/Plant/TreeOak</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -116,7 +116,8 @@
 		</statBases>
 		<ingestible>
 			<nutrition>1.25</nutrition>
-		</ingestible><plant>
+		</ingestible>
+		<plant>
 			<growDays>20</growDays>
 			<leaflessGraphicPath>Things/Plant/TreeBirch_Leafless</leaflessGraphicPath>
 			<harvestWork>700</harvestWork>

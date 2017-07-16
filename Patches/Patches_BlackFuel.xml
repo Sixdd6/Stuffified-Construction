@@ -2,7 +2,11 @@
 <Patch>
 
 	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
 		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="Coal"]</xpath>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>*/ThingDef[defName="FueledGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>

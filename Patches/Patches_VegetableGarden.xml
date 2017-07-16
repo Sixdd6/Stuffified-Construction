@@ -161,9 +161,6 @@
 					</CostList>
 				</value>
 			</li>
-			<!-- <li Class="PatchOperationRemove">
-				<xpath>*/ThingDef[DefName="CandyTable"]/constructEffect</xpath>
-			</li> -->
 		</Operations>
 	</Operation>
 
@@ -194,9 +191,6 @@
 						</CostList>
 					</value>
 			</li>
-			<!-- <li Class="PatchOperationRemove">
-				<xpath>*/ThingDef[DefName="FueledCandyTable"]/constructEffect</xpath>
-			</li> -->
 		</Operations>
 	</Operation>
 
@@ -228,9 +222,6 @@
 					</CostList>
 				</value>
 			</li>
-			<!-- <li Class="PatchOperationRemove">
-				<xpath>*/ThingDef[DefName="Canningstove"]/constructEffect</xpath>
-			</li> -->
 		</Operations>
 	</Operation>
 
@@ -261,9 +252,36 @@
 						</CostList>
 					</value>
 			</li>
-			<!-- <li Class="PatchOperationRemove">
-				<xpath>*/ThingDef[DefName="HandCanningstove"]/constructEffect</xpath>
-			</li> -->
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>/DesignationCategoryDef[defName="GardenTools"]</xpath>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="HydroponicsBasin"]/designationCategory</xpath>
+				<value>
+					<designationCategory>GardenTools</designationCategory>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+			<xpath>/DesignationCategoryDef[defName="VG_Brewing"]</xpath>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="FermentingBarrel"]/designationCategory</xpath>
+				<value>
+					<designationCategory>VG_Brewing</designationCategory>
+				</value>
+			</li>
 		</Operations>
 	</Operation>
 

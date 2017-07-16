@@ -4,7 +4,7 @@
 	<ResearchProjectDef>
 		<defName>Synthwood</defName>
 		<label>Synthwood</label>
-		<description>Unlocks Synthwood for sowing, a genetically engineered tree that grows quickly and produces a moderate amount of usable wood.</description>
+		<description>Unlocks Synthwood for sowing, a genetically engineered tree that grows quickly and produces a moderate amount of high quality wood.</description>
 		<tab>Main</tab>
 		<baseCost>1700</baseCost>
 		<techLevel>Industrial</techLevel>

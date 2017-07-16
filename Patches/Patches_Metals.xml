@@ -20,6 +20,15 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Uranium"]/thingCategories</xpath>
+		<value>
+			<thingCategories>
+				<li>PreciousMetals</li>
+			</thingCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ThingDef[defName="Steel"]/thingCategories</xpath>
 		<value>
 			<thingCategories>
@@ -33,15 +42,6 @@
 		<value>
 			<thingCategories>
 				<li>Metals</li>
-			</thingCategories>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[defName="Uranium"]/thingCategories</xpath>
-		<value>
-			<thingCategories>
-				<li>PreciousMetals</li>
 			</thingCategories>
 		</value>
 	</Operation>

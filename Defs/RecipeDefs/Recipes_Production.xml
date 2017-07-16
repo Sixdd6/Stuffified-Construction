@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <RecipeDefs>
-  
-  <!-- =========== Resource Recipes =========== -->
-  
+
 	<RecipeDef>
 		<defName>MakeFelt</defName>
 		<label>Make Felt</label>
@@ -143,7 +141,5 @@
 			<li>ElectricTailoringBench</li>
 		</recipeUsers>
 	</RecipeDef>
-
-	<!-- =========== Item Recipes =========== -->
 
 </RecipeDefs>

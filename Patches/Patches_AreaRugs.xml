@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[DefName="BarrelDye"]/label</xpath>
+				<value>
+					<label>Dye Barrel</label>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName="BarrelDye"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName="BarrelDye"]</xpath>
+				<value>
+					<costStuffCount>75</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[DefName="BarrelDye"]/CostList</xpath>
+				<value>
+					<CostList>
+						<Steel>25</Steel>
+					</CostList>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[DefName="TableRugMaking"]/label</xpath>
+				<value>
+					<label>Rug Making Table</label>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName="TableRugMaking"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName="TableRugMaking"]</xpath>
+				<value>
+					<costStuffCount>125</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[DefName="TableRugMaking"]/CostList</xpath>
+				<value>
+					<CostList>
+						<Steel>25</Steel>
+					</CostList>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+</Patch>

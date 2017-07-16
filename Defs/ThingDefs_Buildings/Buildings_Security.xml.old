@@ -1,9 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ThingDefs>
 
-  <!--==================== Traps ======================== -->
-
-  <ThingDef ParentName="BuildingBase" Name="BarbedWire">
+<!--   <ThingDef ParentName="BuildingBase" Name="BarbedWire">
     <defName>BarbedWire</defName>
     <label>Barbed Wire</label>
     <description>A mesh of spiked wire, laid on the ground or used as a fence. Discouraging, but not deadly.</description>
@@ -86,6 +84,6 @@
     <researchPrerequisites>
       <li>Electricity</li>
     </researchPrerequisites>
-  </ThingDef>
+  </ThingDef> -->
 
 </ThingDefs>

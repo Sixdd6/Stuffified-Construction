@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName="Beehive"]</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="Beehive"]/label</xpath>
+				<value>
+					<label>Beehive</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="Beehive"]/CostList</xpath>
+				<value>
+					<CostList>
+						<HoneycombWithQueen>1</HoneycombWithQueen>
+					</CostList>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[DefName="ShootingRangeTarget"]</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[DefName="ShootingRangeTarget"]/label</xpath>
+				<value>
+					<label>Shooting Range Target</label>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName="ShootingRangeTarget"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Textiles</li>
+					</stuffCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName="ShootingRangeTarget"]</xpath>
+				<value>
+					<costStuffCount>20</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[DefName="ShootingRangeTarget"]/CostList</xpath>
+				<value>
+					<CostList>
+						<Steel>35</Steel>
+					</CostList>
+				</value>
+			</li>
+			<!-- <li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[DefName="ShootingRangeTarget"]/constructEffect</xpath>
+			</li> -->
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[DefName="MartialArtsTarget"]</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[DefName="MartialArtsTarget"]/label</xpath>
+				<value>
+					<label>Melee Training Dummy</label>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName="MartialArtsTarget"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName="MartialArtsTarget"]</xpath>
+				<value>
+					<costStuffCount>35</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[DefName="MartialArtsTarget"]/CostList</xpath>
+				<value>
+					<CostList>
+						<Cloth>20</Cloth>
+					</CostList>
+				</value>
+			</li>
+			<!-- <li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[DefName="MartialArtsTarget"]/constructEffect</xpath>
+			</li> -->
+		</Operations>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="MeleeWeapon_Gladius"]</xpath>
+		<value>
+			<recipeMaker>
+				<recipeUsers>
+					<li>ElectricSmithy</li>
+					<li>FueledSmithy</li>
+					<li>CraftingSpot</li>
+					<li>Anvil</li>
+				</recipeUsers>
+			</recipeMaker>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="MeleeWeapon_LongSword"]</xpath>
+		<value>
+			<recipeMaker>
+				<recipeUsers>
+					<li>ElectricSmithy</li>
+					<li>FueledSmithy</li>
+					<li>CraftingSpot</li>
+					<li>Anvil</li>
+				</recipeUsers>
+			</recipeMaker>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="MeleeWeapon_Knife"]</xpath>
+		<value>
+			<recipeMaker>
+				<recipeUsers>
+					<li>ElectricSmithy</li>
+					<li>FueledSmithy</li>
+					<li>CraftingSpot</li>
+					<li>Anvil</li>
+				</recipeUsers>
+			</recipeMaker>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="MeleeWeapon_Shiv"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>Anvil</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="MeleeWeapon_Spear"]</xpath>
+		<value>
+			<recipeMaker>
+				<recipeUsers>
+					<li>ElectricSmithy</li>
+					<li>FueledSmithy</li>
+					<li>CraftingSpot</li>
+					<li>Anvil</li>
+				</recipeUsers>
+			</recipeMaker>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="MeleeWeapon_Club"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>Anvil</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="MeleeWeapon_Mace"]</xpath>
+		<value>
+			<recipeMaker>
+				<recipeUsers>
+					<li>ElectricSmithy</li>
+					<li>FueledSmithy</li>
+					<li>CraftingSpot</li>
+					<li>Anvil</li>
+				</recipeUsers>
+			</recipeMaker>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Bow_Short"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>Anvil</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Pila"]</xpath>
+		<value>
+			<recipeMaker>
+				<recipeUsers>
+					<li>ElectricSmithy</li>
+					<li>FueledSmithy</li>
+					<li>CraftingSpot</li>
+					<li>Anvil</li>
+				</recipeUsers>
+			</recipeMaker>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Bow_Great"]</xpath>
+		<value>
+			<recipeMaker>
+				<recipeUsers>
+					<li>ElectricSmithy</li>
+					<li>FueledSmithy</li>
+					<li>CraftingSpot</li>
+					<li>Anvil</li>
+				</recipeUsers>
+			</recipeMaker>
+		</value>
+	</Operation>
+
+</Patch>

@@ -141,41 +141,11 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<Operations>
-			<li Class="PatchOperationTest">
-			<xpath>/DesignationCategoryDef[defName="GardenTools"]</xpath>
-		</li>
-		<li Class="PatchOperationReplace">
-			<xpath>*/ThingDef[defName="HydroponicsBasin"]/designationCategory</xpath>
-				<value>
-					<designationCategory>GardenTools</designationCategory>
-				</value>
-			</li>
-		</Operations>
-	</Operation>
-
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="FermentingBarrel"]/label</xpath>
 		<value>
 			<label>Fermenting Barrel</label>
 		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<Operations>
-			<li Class="PatchOperationTest">
-			<xpath>/DesignationCategoryDef[defName="VG_Brewing"]</xpath>
-		</li>
-		<li Class="PatchOperationReplace">
-			<xpath>*/ThingDef[defName="FermentingBarrel"]/designationCategory</xpath>
-				<value>
-					<designationCategory>VG_Brewing</designationCategory>
-				</value>
-			</li>
-		</Operations>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">

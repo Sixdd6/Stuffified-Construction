@@ -42,6 +42,7 @@
     </CostList>
     <stuffCategories>
       <li>Stony</li>
+      <li>Metallic</li>
     </stuffCategories>
     <costStuffCount>5</costStuffCount>
     <placingDraggableDimensions>1</placingDraggableDimensions>
