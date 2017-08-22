@@ -58,6 +58,9 @@
 					</CostList>
 				</value>
 			</li>
+			<!-- <li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[DefName="ShootingRangeTarget"]/constructEffect</xpath>
+			</li> -->
 		</Operations>
 	</Operation>
 
@@ -95,6 +98,9 @@
 					</CostList>
 				</value>
 			</li>
+			<!-- <li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[DefName="MartialArtsTarget"]/constructEffect</xpath>
+			</li> -->
 		</Operations>
 	</Operation>
 

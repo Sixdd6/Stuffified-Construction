@@ -77,7 +77,7 @@
 		<label>Spin Metal Wire</label>
 		<description>Makes metal wire out of any metal.</description>
 		<jobString>Making wire.</jobString>
-		<workAmount>600</workAmount>
+		<workAmount>1000</workAmount>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<ingredients>
@@ -108,14 +108,14 @@
 	<RecipeDef>
 		<defName>MakeGenericWood</defName>
 		<label>Make Generic Wood</label>
-		<description>Processes any wood into Generic Wood.</description>
-		<jobString>Making generic wood.</jobString>
+		<description>Makes Generic Wood out of other woods.</description>
+		<jobString>Making wood.</jobString>
 		<workAmount>600</workAmount>
 		<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.05</workSkillLearnFactor>
-		<effectWorking>BurnDrug</effectWorking>
-		<soundWorking>Recipe_Smith</soundWorking>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
 		<ingredients>
 			<li>
 				<filter>
@@ -129,17 +129,14 @@
 		<products>
 			<WoodLog>10</WoodLog>
 		</products>
-		<recipeUsers>
-			<li>CraftingSpot</li>
-		</recipeUsers>
 		<fixedIngredientFilter>
 			<categories>
 				<li>WoodLogs</li>
 			</categories>
-		<exceptedThingDefs>
-			<li>WoodLog<li>
-		</exceptedThingDefs>
 		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
 	</RecipeDef>
 
   <!-- =========== Flooring Recipes =========== -->

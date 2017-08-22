@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+<!-- 	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<success>Invert</success>
+				<xpath>*/DesignationCategoryDef[defName="Automation"]</xpath>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Designations</xpath>
+				<value>
+					<DesignationCategoryDef>
+						<defName>Automation</defName>
+						<label>Automation</label>
+						<specialDesignatorClasses>
+							<li>Designator_Cancel</li>
+							<li>Designator_Deconstruct</li>
+						</specialDesignatorClasses>
+					</DesignationCategoryDef>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<Operations>
@@ -68,6 +91,6 @@
 				</value>
 			</li>
 		</Operations>
-	</Operation>
+	</Operation> -->
 
 </Patch>

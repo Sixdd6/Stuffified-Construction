@@ -17,7 +17,7 @@
 			<leaflessGraphicPath>Things/Plant/TreeOak_Leafless</leaflessGraphicPath>
 			<harvestWork>1000</harvestWork>
 			<harvestYield>30</harvestYield>
-			<harvestedThingDef>SynthwoodLog</harvestedThingDef>
+			<harvestedThingDef>WoodSynth</harvestedThingDef>
 			<wildClusterSizeRange>
 				<min>0</min>
 				<max>0</max>

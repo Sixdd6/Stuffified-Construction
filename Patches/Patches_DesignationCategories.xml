@@ -101,4 +101,28 @@
 		</Operations>
 	</Operation>
 
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/DesignationCategoryDef[defName="Fences"]</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/DesignationCategoryDef[defName="Fences"]</xpath>
+				<value>
+					<DesignationCategoryDef>
+						<defName>Fences</defName>
+						<label>Fences</label>
+						<description>Simple fences and more!</description>
+						<order>690</order>
+						<specialDesignatorClasses>
+						  <li>Designator_Cancel</li>
+						  <li>Designator_Deconstruct</li>
+						</specialDesignatorClasses>
+					</DesignationCategoryDef>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
 </Patch>

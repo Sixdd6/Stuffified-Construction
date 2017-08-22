@@ -259,10 +259,10 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-				<xpath>/DesignationCategoryDef[defName="GardenTools"]</xpath>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>*/ThingDef[defName="HydroponicsBasin"]/designationCategory</xpath>
+			<xpath>/DesignationCategoryDef[defName="GardenTools"]</xpath>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="HydroponicsBasin"]/designationCategory</xpath>
 				<value>
 					<designationCategory>GardenTools</designationCategory>
 				</value>
@@ -274,10 +274,10 @@
 		<success>Always</success>
 		<Operations>
 			<li Class="PatchOperationTest">
-				<xpath>/DesignationCategoryDef[defName="VG_Brewing"]</xpath>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>*/ThingDef[defName="FermentingBarrel"]/designationCategory</xpath>
+			<xpath>/DesignationCategoryDef[defName="VG_Brewing"]</xpath>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName="FermentingBarrel"]/designationCategory</xpath>
 				<value>
 					<designationCategory>VG_Brewing</designationCategory>
 				</value>

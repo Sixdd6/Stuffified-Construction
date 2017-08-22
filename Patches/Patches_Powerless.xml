@@ -9,64 +9,20 @@
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>*/ThingDef[defName="FueledGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
-				<order>Append</order>
 				<value>
 					<li>POW_Charcoal</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>*/ThingDef[DefName="FueledSmithy"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
-				<order>Append</order>
 				<value>
 					<li>POW_Charcoal</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>*/ThingDef[defName="Forge"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
-				<order>Append</order>
 				<value>
 					<li>POW_Charcoal</li>
-				</value>
-			</li>
-		</Operations>
-	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<Operations>
-			<li Class="PatchOperationTest">
-				<xpath>*/ThingDef[defName="POW_TableSimple"]</xpath>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>*/ThingDef[defName="POW_TableSimple"]/CostList</xpath>
-				<value>
-					<CostList>
-					</CostList>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>*/ThingDef[defName="POW_TableSimple"]</xpath>
-				<value>
-					<StuffCategories>
-						<li>Woody</li>
-					</StuffCategories>
-					<costStuffCount>10</costStuffCount>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>*/ThingDef[defName="POW_StumpChair"]/CostList</xpath>
-				<value>
-					<CostList>
-					</CostList>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>*/ThingDef[defName="POW_StumpChair"]</xpath>
-				<value>
-					<StuffCategories>
-						<li>Woody</li>
-					</StuffCategories>
-					<costStuffCount>5</costStuffCount>
 				</value>
 			</li>
 		</Operations>

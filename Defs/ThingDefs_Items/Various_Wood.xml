@@ -5,19 +5,19 @@
   
   <ThingDef ParentName="ResourceVerbBase" Name="WoodLog">
     <defName>WoodLog</defName>
-    <label>Generic Logs</label>
-    <description>A log of generic wood.</description>
+    <label>Generic Wood Logs</label>
+    <description>A log mode of various types of woods, very cheap but not pretty to look at.</description>
     <graphicData>
       <texPath>Things/Item/Resource/WoodLogWhite</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <color>(133,97,67)</color>
+      <color>(75,67,67)</color>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
     <soundInteract>Wood_Drop</soundInteract>
     <soundDrop>Wood_Drop</soundDrop>
     <statBases>
-      <MarketValue>1.4</MarketValue>
-      <MaxHitPoints>300</MaxHitPoints>
+      <MarketValue>0.4</MarketValue>
+      <MaxHitPoints>60</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>2</DeteriorationRate>
       <MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
@@ -30,21 +30,21 @@
       <categories>
         <li>Woody</li>
       </categories>
-      <color>(133,97,67)</color>
+      <color>(75,67,67)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
       <soundImpactStuff>BulletImpactWood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statOffsets>
-        <Beauty>4</Beauty>
+        <Beauty>0.5</Beauty>
       </statOffsets>
       <statFactors>
         <MaxHitPoints>1.0</MaxHitPoints>
-        <Beauty>2</Beauty>
+        <Beauty>0.5</Beauty>
         <Flammability>0.5</Flammability>
-        <WorkToMake>0.7</WorkToMake>
-        <DoorOpenSpeed>0.5</DoorOpenSpeed>
+        <WorkToMake>0.9</WorkToMake>
+        <DoorOpenSpeed>1.0</DoorOpenSpeed>
         <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
       </statFactors>
     </stuffProps>
@@ -64,39 +64,20 @@
     </verbs>
   </ThingDef>
 
-  <ThingDef ParentName="ResourceVerbBase" Name="WoodLog">
-    <defName>SynthwoodLog</defName>
+<ThingDef ParentName="WoodLog" Name="WoodSynth">
+    <defName>WoodSynth</defName>
     <label>Synthwood Logs</label>
     <description>A log of synthwood. Synthwood comes from a tree which was genetically designed to produce quality wood quickly. Makes pretty and durable floors and walls.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/WoodLogWhite</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
       <color>(133,97,67)</color>
     </graphicData>
-    <equippedAngleOffset>-20</equippedAngleOffset>
-    <soundInteract>Wood_Drop</soundInteract>
-    <soundDrop>Wood_Drop</soundDrop>
     <statBases>
       <MarketValue>1.4</MarketValue>
       <MaxHitPoints>300</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-      <DeteriorationRate>2</DeteriorationRate>
-      <MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
-      <MeleeWeapon_Cooldown>2.2</MeleeWeapon_Cooldown>
-      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
       <stuffAdjective>synthwood</stuffAdjective>
-      <categories>
-        <li>Woody</li>
-      </categories>
       <color>(133,97,67)</color>
-      <constructEffect>ConstructWood</constructEffect>
-      <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
-      <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
-      <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statOffsets>
         <Beauty>4</Beauty>
       </statOffsets>
@@ -106,25 +87,10 @@
         <Flammability>0.5</Flammability>
         <WorkToMake>0.7</WorkToMake>
         <DoorOpenSpeed>0.5</DoorOpenSpeed>
-        <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
-    <thingCategories>
-      <li>WoodLogs</li>
-    </thingCategories>
-    <techHediffsTags>
-      <li>Poor</li>
-    </techHediffsTags>
-    <verbs>
-      <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <meleeDamageDef>Blunt</meleeDamageDef>
-      </li>
-    </verbs>
   </ThingDef>
-  
+
   <ThingDef ParentName="WoodLog" Name="WoodBirch">
     <defName>WoodBirch</defName>
     <label>Birch Logs</label>

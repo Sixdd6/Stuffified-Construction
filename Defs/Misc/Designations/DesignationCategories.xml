@@ -2,17 +2,6 @@
 <Defs>
 
   <DesignationCategoryDef>
-    <defName>Fences</defName>
-    <label>Fences</label>
-    <description>Simple fences and more!</description>
-    <order>690</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-    </specialDesignatorClasses>
-  </DesignationCategoryDef>
-
-  <DesignationCategoryDef>
     <defName>Production2</defName>
     <label>Adv. Prod.</label>
     <description>Electric structures used for producing goods.</description>
